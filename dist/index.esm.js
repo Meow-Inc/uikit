@@ -226,7 +226,7 @@ var lightColors = __assign(__assign(__assign(__assign({}, bannerColorsLight), ba
         violetAlt: "linear-gradient(180deg, #CBD7EF 0%, #9A9FD0 100%)",
         gold: "linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)",
     }, shadows: __assign({}, shadowsLight) });
-var darkColors = __assign(__assign(__assign(__assign({}, bannerColorsDark), baseColors), additionalColors), { menuSelectedBackground: "#ef52d1", menuSelectedColor: "#fff", menuHoverBackground: "#ffffff0d", accordianBackground: '#00000024', secondary: "#9A6AFF", background: "#2d2d32", backgroundDisabled: "#3c3742", backgroundAlt: "#27262c", cardBorder: "#383241", contrast: "#FFFFFF", dropdown: "#1E1D20", dropdownDeep: "#100C18", invertedContrast: "#191326", input: "#372F47", inputSecondary: "#262130", primaryDark: "#0098A1", tertiary: "#353547", text: "#F4EEFF", textDisabled: "#666171", textSubtle: "#B8ADD2", disabled: "#524B63", gradients: {
+var darkColors = __assign(__assign(__assign(__assign({}, bannerColorsDark), baseColors), additionalColors), { menuSelectedBackground: "#ef52d1", menuSelectedColor: "#fff", menuHoverBackground: "#ffffff0d", accordianBackground: '#00000024', secondary: "#9A6AFF", background: "#2d2d32", backgroundDisabled: "#3c3742", backgroundAlt: "#35303a", cardBorder: "#383241", contrast: "#FFF", dropdown: "#1E1D20", dropdownDeep: "#100C18", invertedContrast: "#191326", input: "#372F47", inputSecondary: "#262130", primaryDark: "#0098A1", tertiary: "#353547", text: "#F4EEFF", textDisabled: "#666171", textSubtle: "#B8ADD2", disabled: "#524B63", gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
         inverseBubblegum: "linear-gradient(139.73deg, #3D2A54 0%, #313D5C 100%)",
         cardHeader: "linear-gradient(166.77deg, #3B4155 0%, #3A3045 100%)",
@@ -1481,9 +1481,9 @@ var getBoxShadow = function (_a) {
     }
     return theme.card.boxShadow;
 };
-var StyledCard = styled.div(templateObject_1$K || (templateObject_1$K = __makeTemplateObject(["\n  background-color: ", ";\n  border: ", ";\n  border-radius: ", ";\n  // box-shadow: ", ";\n  color: ", ";\n  overflow: hidden;\n  position: relative;\n\n  ", "\n"], ["\n  background-color: ", ";\n  border: ", ";\n  border-radius: ", ";\n  // box-shadow: ", ";\n  color: ", ";\n  overflow: hidden;\n  position: relative;\n\n  ", "\n"])), function (_a) {
+var StyledCard = styled.div(templateObject_1$K || (templateObject_1$K = __makeTemplateObject(["\n  background-color: ", ";\n  // border: ", ";\n  border-radius: ", ";\n  // box-shadow: ", ";\n  color: ", ";\n  overflow: hidden;\n  position: relative;\n\n  ", "\n"], ["\n  background-color: ", ";\n  // border: ", ";\n  border-radius: ", ";\n  // box-shadow: ", ";\n  color: ", ";\n  overflow: hidden;\n  position: relative;\n\n  ", "\n"])), function (_a) {
     var theme = _a.theme;
-    return theme.card.background;
+    return theme.colors.backgroundAlt;
 }, function (_a) {
     var theme = _a.theme;
     return theme.card.boxShadow;
