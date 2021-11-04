@@ -28,7 +28,7 @@ export const bannerColorsDark =  {
 
 export const additionalColors = {
   binance: "#F0B90B",
-  overlay: "#452a7a",
+  overlay: "#18161a",
 };
 
 export const shadowsLight = {
