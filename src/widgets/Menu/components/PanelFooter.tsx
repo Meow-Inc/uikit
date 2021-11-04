@@ -17,7 +17,7 @@ const Container = styled.div<{ isDark: boolean, isPushed: boolean}>`
   flex-direction: row;
   padding: ${({ isPushed }) => isPushed ? '0px' : '4px'};;
   margin: ${({ isPushed }) => isPushed ? '0px' : '0px'};
-  background-color: ${({ theme, isPushed, isDark }) => isPushed && isDark ? theme.card.background : isPushed && !isDark ? '#fff' : 'rgba(0,0,0,0)'};
+  background-color: ${({ theme, isPushed, isDark }) => isPushed && isDark ? theme.card.background : isPushed && !isDark ? 'rgba(0,0,0,0)' : 'rgba(0,0,0,0)'};
   border-radius: 16px;
   align-items: center;
   margin-right: 26px;

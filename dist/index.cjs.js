@@ -3966,7 +3966,7 @@ var Container$1 = styled__default['default'].div(templateObject_1$9 || (template
     return isPushed ? '0px' : '0px';
 }, function (_a) {
     var theme = _a.theme, isPushed = _a.isPushed, isDark = _a.isDark;
-    return isPushed && isDark ? theme.card.background : isPushed && !isDark ? '#fff' : 'rgba(0,0,0,0)';
+    return isPushed && isDark ? theme.card.background : isPushed && !isDark ? 'rgba(0,0,0,0)' : 'rgba(0,0,0,0)';
 });
 styled__default['default'].div(templateObject_2$4 || (templateObject_2$4 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  height: 24px;\n  margin-left: 24px;\n\n  button {\n    padding: 0px!important;\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  height: 24px;\n  margin-left: 24px;\n\n  button {\n    padding: 0px!important;\n  }\n"])), MENU_ENTRY_HEIGHT);
 var PriceEntry = styled__default['default'].div(templateObject_3$3 || (templateObject_3$3 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: 24px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: 24px;\n"])));
