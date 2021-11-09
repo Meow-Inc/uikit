@@ -25,7 +25,7 @@ const LinkLabel = styled(Text)<{ isPushed: boolean }>`
   ${({ isPushed, theme }) => (isPushed ? `
     color: ${theme.colors.textSubtle};
   `:`
-    display: none!important;
+    display: block!important;
   `)};
   flex-grow: 1;
   transition: opacity 0.4s;
