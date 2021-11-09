@@ -71,11 +71,11 @@ const LogoContainer = styled.div<{ isPushed: boolean }>`
   flex-grow: 1;
   transition: opacity 0.4s;
   pointer-events: none;
-  ${({ isPushed, theme }) => (isPushed ? `
-    opacity: 1;
-  `:`
-    opacity: 0!important;
-  `)};
+  // ${({ isPushed, theme }) => (isPushed ? `
+  //   opacity: 1;
+  // `:`
+  //   opacity: 0!important;
+  // `)};
 
   svg {
     margin-bottom: 0px!important;

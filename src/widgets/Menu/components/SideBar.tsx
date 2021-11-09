@@ -23,7 +23,7 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean; isMobile:
   justify-content: space-between;
   flex-shrink: 0;
   top: 71px;
-  left: 0px;
+  left: ${({ isPushed }) => !isPushed ? "-220px" : '0px'};
   height: 100%;
   width: 220px;
   transition: padding-top 0.2s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1);

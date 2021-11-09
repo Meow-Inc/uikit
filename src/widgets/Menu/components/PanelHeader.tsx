@@ -12,16 +12,19 @@ import Logo from "./Logo";
 import Text from "../../../components/Text/Text";
 
 
-interface Props extends PanelProps, PushedProps {}
+interface Props extends PanelProps, PushedProps {
+  isMobile?: boolean;
+}
 
 const Container = styled.div<{ isPushed: boolean }>`
   flex: none;
   padding: 8px 5px;
   margin: 0px 20px;
   // background-color: ${({ theme }) => theme.nav.background};
-
+  display: flex;
   button {
     width: ${({isPushed}) => isPushed ? '100%' : 'initial'};
+    margin-right: 12px;
   }
 `;
 
@@ -53,25 +56,23 @@ const PanelHeader: React.FC<Props> = ({
   isPushed,
   pushNav,
   isDark,
-  links
+  links,
+  isMobile
 }) => {
-  if (!isPushed) {
-    return (
-      <Container isPushed={true}>
-        <IconButton className="cog" variant="text" onClick={() => pushNav(true)}>
-            <CogIcon />
-        </IconButton>
-      </Container>
-    );
-  }
 
 
   const homeLink = links.find((link) => link.label === "Home");
 
   return (
     <Container isPushed={false}>
+        {isMobile &&
+          <IconButton className="cog" variant="text" onClick={() => pushNav(!isPushed)}>
+              <CogIcon />
+          </IconButton>
+        }
+
         <Logo
-          isPushed={isPushed}
+          isPushed={isMobile ? true : false}
           togglePush={() => pushNav(!isPushed)}
           isDark={isDark}
           href={homeLink?.href ?? "/"}
@@ -79,5 +80,14 @@ const PanelHeader: React.FC<Props> = ({
     </Container>
   );
 };
+
+// if (!isPushed) {
+//   return (
+//     <Container isPushed={true}>
+//
+//     </Container>
+//   );
+// }
+
 
 export default PanelHeader;

@@ -3975,13 +3975,17 @@ var PriceEntry = styled.div(templateObject_3$3 || (templateObject_3$3 = __makeTe
 styled.div(templateObject_4$2 || (templateObject_4$2 = __makeTemplateObject(["\n  margin-top: -3px;\n"], ["\n  margin-top: -3px;\n"])));
 var LoginContainer = styled.div(templateObject_5$2 || (templateObject_5$2 = __makeTemplateObject(["\n  margin-left: 24px;\n"], ["\n  margin-left: 24px;\n"])));
 var PanelFooter = function (_a) {
-    var isPushed = _a.isPushed, pushNav = _a.pushNav; _a.toggleTheme; var isDark = _a.isDark, cakePriceUsd = _a.cakePriceUsd; _a.currentLang; _a.langs; _a.setLang; var userBlock = _a.userBlock;
+    _a.isPushed; _a.pushNav; _a.toggleTheme; var isDark = _a.isDark, cakePriceUsd = _a.cakePriceUsd; _a.currentLang; _a.langs; _a.setLang; var userBlock = _a.userBlock;
     console.log('Is Dark', isDark);
-    if (!isPushed) {
-        return (React.createElement(Container$2, { isDark: isDark, isPushed: false },
-            React.createElement(IconButton, { variant: "text", onClick: function () { return pushNav(true); } },
-                React.createElement(Icon$1e, null))));
-    }
+    // if (!isPushed) {
+    //   return (
+    //     <Container isDark={isDark} isPushed={false}>
+    //       <IconButton variant="text" onClick={() => pushNav(true)}>
+    //         <CogIcon />
+    //       </IconButton>
+    //     </Container>
+    //   );
+    // }
     // <LangSelector currentLang={currentLang} langs={langs} setLang={setLang} />
     // <SocialLinks />
     // <SettingsEntry>
@@ -4003,13 +4007,13 @@ var LogoWrapper = styled.div(templateObject_2$4 || (templateObject_2$4 = __makeT
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 }, blink);
-var LogoContainer = styled.div(templateObject_3$2 || (templateObject_3$2 = __makeTemplateObject(["\n  justify-content: flex-start;\n  align-items: center;\n  font-size: 28px;\n  font-weight: 400;\n  display: flex;\n  color:  ", ";\n  flex-grow: 1;\n  transition: opacity 0.4s;\n  pointer-events: none;\n  ", ";\n\n  svg {\n    margin-bottom: 0px!important;\n  }\n"], ["\n  justify-content: flex-start;\n  align-items: center;\n  font-size: 28px;\n  font-weight: 400;\n  display: flex;\n  color:  ", ";\n  flex-grow: 1;\n  transition: opacity 0.4s;\n  pointer-events: none;\n  ",
+var LogoContainer = styled.div(templateObject_3$2 || (templateObject_3$2 = __makeTemplateObject(["\n  justify-content: flex-start;\n  align-items: center;\n  font-size: 28px;\n  font-weight: 400;\n  display: flex;\n  color:  ", ";\n  flex-grow: 1;\n  transition: opacity 0.4s;\n  pointer-events: none;\n  // ", ";\n\n  svg {\n    margin-bottom: 0px!important;\n  }\n"], ["\n  justify-content: flex-start;\n  align-items: center;\n  font-size: 28px;\n  font-weight: 400;\n  display: flex;\n  color:  ", ";\n  flex-grow: 1;\n  transition: opacity 0.4s;\n  pointer-events: none;\n  // ",
     ";\n\n  svg {\n    margin-bottom: 0px!important;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return (theme.colors.text);
 }, function (_a) {
     var isPushed = _a.isPushed; _a.theme;
-    return (isPushed ? "\n    opacity: 1;\n  " : "\n    opacity: 0!important;\n  ");
+    return (isPushed ? "\n  //   opacity: 1;\n  // " : "\n  //   opacity: 0!important;\n  // ");
 });
 styled.img(templateObject_4$1 || (templateObject_4$1 = __makeTemplateObject([""], [""])));
 var LogoText = styled.div(templateObject_5$1 || (templateObject_5$1 = __makeTemplateObject(["\n  margin-left: 8px;\n"], ["\n  margin-left: 8px;\n"])));
@@ -4028,7 +4032,7 @@ var Logo = function (_a) {
 var Logo$1 = React.memo(Logo, function (prev, next) { return prev.isPushed === next.isPushed && prev.isDark === next.isDark; });
 var templateObject_1$a, templateObject_2$4, templateObject_3$2, templateObject_4$1, templateObject_5$1;
 
-var Container$1 = styled.div(templateObject_1$9 || (templateObject_1$9 = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 5px;\n  margin: 0px 20px;\n  // background-color: ", ";\n\n  button {\n    width: ", ";\n  }\n"], ["\n  flex: none;\n  padding: 8px 5px;\n  margin: 0px 20px;\n  // background-color: ", ";\n\n  button {\n    width: ", ";\n  }\n"])), function (_a) {
+var Container$1 = styled.div(templateObject_1$9 || (templateObject_1$9 = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 5px;\n  margin: 0px 20px;\n  // background-color: ", ";\n  display: flex;\n  button {\n    width: ", ";\n    margin-right: 12px;\n  }\n"], ["\n  flex: none;\n  padding: 8px 5px;\n  margin: 0px 20px;\n  // background-color: ", ";\n  display: flex;\n  button {\n    width: ", ";\n    margin-right: 12px;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.nav.background;
 }, function (_a) {
@@ -4039,15 +4043,13 @@ styled.div(templateObject_2$3 || (templateObject_2$3 = __makeTemplateObject(["\n
 styled.div(templateObject_3$1 || (templateObject_3$1 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n\n  button {\n    padding: 0px!important;\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n\n  button {\n    padding: 0px!important;\n  }\n"])), MENU_ENTRY_HEIGHT);
 var PanelHeader = function (_a) {
     var _b;
-    var isPushed = _a.isPushed, pushNav = _a.pushNav, isDark = _a.isDark, links = _a.links;
-    if (!isPushed) {
-        return (React.createElement(Container$1, { isPushed: true },
-            React.createElement(IconButton, { className: "cog", variant: "text", onClick: function () { return pushNav(true); } },
-                React.createElement(Icon$1e, null))));
-    }
+    var isPushed = _a.isPushed, pushNav = _a.pushNav, isDark = _a.isDark, links = _a.links, isMobile = _a.isMobile;
     var homeLink = links.find(function (link) { return link.label === "Home"; });
     return (React.createElement(Container$1, { isPushed: false },
-        React.createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return pushNav(!isPushed); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" })));
+        isMobile &&
+            React.createElement(IconButton, { className: "cog", variant: "text", onClick: function () { return pushNav(!isPushed); } },
+                React.createElement(Icon$1e, null)),
+        React.createElement(Logo$1, { isPushed: isMobile ? true : false, togglePush: function () { return pushNav(!isPushed); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" })));
 };
 var templateObject_1$9, templateObject_2$3, templateObject_3$1;
 
@@ -4071,10 +4073,10 @@ var StyledPanel$1 = styled.div(templateObject_1$8 || (templateObject_1$8 = __mak
     return (isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED) + "px";
 });
 var Panel = function (props) {
-    var isPushed = props.isPushed, showMenu = props.showMenu; props.userBlock;
+    var isPushed = props.isPushed, showMenu = props.showMenu; props.userBlock; var isMobile = props.isMobile;
     console.log('Props', props);
     return (React.createElement(StyledPanel$1, { isPushed: isPushed, showMenu: showMenu },
-        React.createElement(PanelHeader, __assign({}, props)),
+        React.createElement(PanelHeader, __assign({}, props, { isMobile: isMobile ? true : false })),
         React.createElement(PanelBody$1, __assign({}, props)),
         React.createElement(PanelFooter, __assign({}, props))));
 };
@@ -4109,12 +4111,15 @@ var PanelBody = function (_a) {
 };
 var templateObject_1$7;
 
-var StyledPanel = styled.div(templateObject_1$6 || (templateObject_1$6 = __makeTemplateObject(["\n  position: fixed;\n  padding-top: ", ";\n  background-color: ", ";\n  align-items: center;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  top: 71px;\n  left: 0px;\n  height: 100%;\n  width: 220px;\n  transition: padding-top 0.2s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n  border-bottom: 2px solid rgba(133, 133, 133, 0.1);\n  display: ", ";\n\n  ", ";\n\n  ", " {\n    // border-right: 2px solid rgba(133, 133, 133, 0.1);\n    // width: ", ";\n  }\n"], ["\n  position: fixed;\n  padding-top: ", ";\n  background-color: ", ";\n  align-items: center;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  top: 71px;\n  left: 0px;\n  height: 100%;\n  width: 220px;\n  transition: padding-top 0.2s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n  border-bottom: 2px solid rgba(133, 133, 133, 0.1);\n  display: ", ";\n\n  ", ";\n\n  ", " {\n    // border-right: 2px solid rgba(133, 133, 133, 0.1);\n    // width: ", ";\n  }\n"])), function (_a) {
+var StyledPanel = styled.div(templateObject_1$6 || (templateObject_1$6 = __makeTemplateObject(["\n  position: fixed;\n  padding-top: ", ";\n  background-color: ", ";\n  align-items: center;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  top: 71px;\n  left: ", ";\n  height: 100%;\n  width: 220px;\n  transition: padding-top 0.2s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n  border-bottom: 2px solid rgba(133, 133, 133, 0.1);\n  display: ", ";\n\n  ", ";\n\n  ", " {\n    // border-right: 2px solid rgba(133, 133, 133, 0.1);\n    // width: ", ";\n  }\n"], ["\n  position: fixed;\n  padding-top: ", ";\n  background-color: ", ";\n  align-items: center;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  top: 71px;\n  left: ", ";\n  height: 100%;\n  width: 220px;\n  transition: padding-top 0.2s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n  border-bottom: 2px solid rgba(133, 133, 133, 0.1);\n  display: ", ";\n\n  ", ";\n\n  ", " {\n    // border-right: 2px solid rgba(133, 133, 133, 0.1);\n    // width: ", ";\n  }\n"])), function (_a) {
     var showMenu = _a.showMenu;
     return (showMenu ? "0" : 0);
 }, function (_a) {
     var theme = _a.theme;
     return theme.nav.background;
+}, function (_a) {
+    var isPushed = _a.isPushed;
+    return !isPushed ? "-220px" : '0px';
 }, function (_a) {
     var isPushed = _a.isPushed;
     return (isPushed ? "initial" : "hidden");

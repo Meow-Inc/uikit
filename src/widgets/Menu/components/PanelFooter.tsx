@@ -62,15 +62,15 @@ const PanelFooter: React.FC<Props> = ({
   userBlock
 }) => {
   console.log('Is Dark', isDark)
-  if (!isPushed) {
-    return (
-      <Container isDark={isDark} isPushed={false}>
-        <IconButton variant="text" onClick={() => pushNav(true)}>
-          <CogIcon />
-        </IconButton>
-      </Container>
-    );
-  }
+  // if (!isPushed) {
+  //   return (
+  //     <Container isDark={isDark} isPushed={false}>
+  //       <IconButton variant="text" onClick={() => pushNav(true)}>
+  //         <CogIcon />
+  //       </IconButton>
+  //     </Container>
+  //   );
+  // }
   // <LangSelector currentLang={currentLang} langs={langs} setLang={setLang} />
   // <SocialLinks />
   // <SettingsEntry>

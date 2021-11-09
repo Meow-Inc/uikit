@@ -41,11 +41,11 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
 
 
 const Panel: React.FC<Props> = (props) => {
-  const { isPushed, showMenu, userBlock } = props;
+  const { isPushed, showMenu, userBlock, isMobile } = props;
   console.log('Props', props)
   return (
     <StyledPanel isPushed={isPushed} showMenu={showMenu}>
-      <PanelHeader {...props}/>
+      <PanelHeader {...props} isMobile={isMobile ? true : false}/>
       <PanelBody {...props} />
       <PanelFooter {...props} />
     </StyledPanel>
