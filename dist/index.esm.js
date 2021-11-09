@@ -4032,7 +4032,7 @@ var Logo = function (_a) {
 var Logo$1 = React.memo(Logo, function (prev, next) { return prev.isPushed === next.isPushed && prev.isDark === next.isDark; });
 var templateObject_1$a, templateObject_2$4, templateObject_3$2, templateObject_4$1, templateObject_5$1;
 
-var Container$1 = styled.div(templateObject_1$9 || (templateObject_1$9 = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 5px;\n  margin: 0px 20px;\n  // background-color: ", ";\n  display: flex;\n  button {\n    width: ", ";\n    margin-right: 12px;\n  }\n"], ["\n  flex: none;\n  padding: 8px 5px;\n  margin: 0px 20px;\n  // background-color: ", ";\n  display: flex;\n  button {\n    width: ", ";\n    margin-right: 12px;\n  }\n"])), function (_a) {
+var Container$1 = styled.div(templateObject_1$9 || (templateObject_1$9 = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 5px;\n  margin: 0px 20px;\n  // background-color: ", ";\n  display: flex;\n  button {\n    width: ", ";\n    margin-right: 12px;\n\n    > div {\n      display: flex!important;\n    }\n  }\n"], ["\n  flex: none;\n  padding: 8px 5px;\n  margin: 0px 20px;\n  // background-color: ", ";\n  display: flex;\n  button {\n    width: ", ";\n    margin-right: 12px;\n\n    > div {\n      display: flex!important;\n    }\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.nav.background;
 }, function (_a) {

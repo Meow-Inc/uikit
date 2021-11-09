@@ -25,6 +25,10 @@ const Container = styled.div<{ isPushed: boolean }>`
   button {
     width: ${({isPushed}) => isPushed ? '100%' : 'initial'};
     margin-right: 12px;
+
+    > div {
+      display: flex!important;
+    }
   }
 `;
 
