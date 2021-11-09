@@ -4081,7 +4081,7 @@ var Panel = function (props) {
 var templateObject_1$8;
 
 var Icons = IconModule;
-var Container = styled.div(templateObject_1$7 || (templateObject_1$7 = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n  align-items: center;\n  max-width: 1166px;\n"], ["\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n  align-items: center;\n  max-width: 1166px;\n"])));
+var Container = styled.div(templateObject_1$7 || (templateObject_1$7 = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n  align-items: center;\n  max-width: 1166px;\n  padding: 16px;\n"], ["\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n  align-items: center;\n  max-width: 1166px;\n  padding: 16px;\n"])));
 var PanelBody = function (_a) {
     var isPushed = _a.isPushed, pushNav = _a.pushNav, isMobile = _a.isMobile, links = _a.links;
     var location = useLocation();

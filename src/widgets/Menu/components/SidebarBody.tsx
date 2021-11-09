@@ -20,6 +20,7 @@ const Container = styled.div`
   height: 100%;
   align-items: center;
   max-width: 1166px;
+  padding: 16px;
 `;
 
 const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
