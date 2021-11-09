@@ -16,11 +16,13 @@ interface Props extends PushedProps {
   isActive?: boolean;
 }
 
-const Container = styled.div`
+const Container = styled.div<{isMobile: boolean;}>`
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
   position: relative;
+  width: ${({ isMobile }) => (isMobile ? `100%`:`initial`)};
+
 `;
 
 const DropdownContent = styled.div<{ isOpen: boolean; isPushed: boolean; maxHeight: number }>`
@@ -42,6 +44,7 @@ const Dropdown: React.FC<Props> = ({
   status,
   icon,
   isPushed,
+  isMobile,
   pushNav,
   initialOpenState = false,
   children,
@@ -57,14 +60,14 @@ const Dropdown: React.FC<Props> = ({
       setIsOpen(true);
     }
   };
-
+  console.log('IsMobile', isMobile)
   // Handle close if click outside
   const ref = useRef(null)
   useOnClickOutside(ref,() => setIsOpen(false))
 
 
   return (
-    <Container ref={ref}>
+    <Container ref={ref} isMobile={isMobile}>
       <MenuEntry onClick={handleClick} className={className} isActive={isActive} role="button">
         {icon}
         <LinkLabel isPushed={isPushed}>{label}</LinkLabel>

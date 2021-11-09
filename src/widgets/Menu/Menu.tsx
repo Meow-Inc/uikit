@@ -5,6 +5,8 @@ import Overlay from "../../components/Overlay/Overlay";
 import Flex from "../../components/Box/Flex";
 import { useMatchBreakpoints } from "../../hooks";
 import Panel from "./components/Panel";
+import Sidebar from "./components/SideBar";
+
 import UserBlock from "./components/UserBlock";
 import { NavProps } from "./types";
 import Avatar from "./components/Avatar";
@@ -118,7 +120,23 @@ const Menu: React.FC<NavProps> = ({
     <Wrapper>
 
       <BodyWrapper>
+        <Sidebar
+          isSidebar={true}
+          isPushed={isPushed}
+          isMobile={isMobile}
+          showMenu={showMenu}
+          isDark={isDark}
+          toggleTheme={toggleTheme}
+          langs={langs}
+          setLang={setLang}
+          currentLang={currentLang}
+          cakePriceUsd={cakePriceUsd}
+          pushNav={setIsPushed}
+          links={links}
+          userBlock={<UserBlock account={account} login={login} logout={logout} />}
+        />
         <Panel
+          isSidebar={false}
           isPushed={isPushed}
           isMobile={isMobile}
           showMenu={showMenu}
