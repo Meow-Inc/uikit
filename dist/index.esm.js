@@ -207,7 +207,7 @@ var bannerColorsDark = {
 };
 var additionalColors = {
     binance: "#F0B90B",
-    overlay: "#18161a",
+    overlay: "#060506",
 };
 var shadowsLight = {
     stickyHeader: "rgba(47 42 68  / 10%) 0px 56px 46px -25px",
@@ -3776,11 +3776,14 @@ var rainbowAnimation = keyframes(templateObject_1$d || (templateObject_1$d = __m
 var LinkLabel = styled(Text)(templateObject_2$7 || (templateObject_2$7 = __makeTemplateObject(["\n  ", ";\n  flex-grow: 1;\n  transition: opacity 0.4s;\n"], ["\n  ",
     ";\n  flex-grow: 1;\n  transition: opacity 0.4s;\n"])), function (_a) {
     var isPushed = _a.isPushed, theme = _a.theme;
-    return (isPushed ? "\n    color: " + theme.colors.textSubtle + ";\n  " : "\n    opacity: 0!important;\n  ");
+    return (isPushed ? "\n    color: " + theme.colors.textSubtle + ";\n  " : "\n    display: none!important;\n  ");
 });
-var MenuEntry = styled.div(templateObject_3$4 || (templateObject_3$4 = __makeTemplateObject(["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  margin: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  background-color: ", ";\n  border-radius: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  a > div {\n    color: ", ";\n  }\n\n  a > svg {\n    fill: ", ";\n    margin-right: 12px;\n  }\n\n  > svg:first-child {\n    margin-right: 12px;\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"], ["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  margin: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  background-color: ", ";\n  border-radius: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  a > div {\n    color: ", ";\n  }\n\n  a > svg {\n    fill: ", ";\n    margin-right: 12px;\n  }\n\n  > svg:first-child {\n    margin-right: 12px;\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"])), MENU_ENTRY_HEIGHT, function (_a) {
+var MenuEntry = styled.div(templateObject_3$4 || (templateObject_3$4 = __makeTemplateObject(["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  padding: ", ";\n\n  margin: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  background-color: ", ";\n  border-radius: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  a > div {\n    color: ", ";\n  }\n\n  a > svg {\n    fill: ", ";\n    margin-right: ", ";\n  }\n\n  > svg:first-child {\n    margin-right: 12px;\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"], ["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  padding: ", ";\n\n  margin: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  background-color: ", ";\n  border-radius: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  a > div {\n    color: ", ";\n  }\n\n  a > svg {\n    fill: ", ";\n    margin-right: ", ";\n  }\n\n  > svg:first-child {\n    margin-right: 12px;\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"])), MENU_ENTRY_HEIGHT, function (_a) {
     var secondary = _a.secondary;
     return (secondary ? "0 20px" : "0 20px");
+}, function (_a) {
+    var isMobile = _a.isMobile;
+    return (isMobile ? "0px 14px" : "0px 20px");
 }, function (_a) {
     var secondary = _a.secondary;
     return (secondary ? "0 8px" : "0 0px");
@@ -3811,6 +3814,9 @@ var MenuEntry = styled.div(templateObject_3$4 || (templateObject_3$4 = __makeTem
 }, function (_a) {
     var isActive = _a.isActive, theme = _a.theme;
     return (!isActive ? theme.colors.textSubtle : theme.colors.menuSelectedColor);
+}, function (_a) {
+    var isMobile = _a.isMobile;
+    return (isMobile ? "0px" : "12px");
 }, rainbowAnimation, function (_a) {
     var theme = _a.theme;
     return theme.colors.gradients.bubblegum;
@@ -3919,12 +3925,12 @@ var PanelBody = function (_a) {
             var itemsMatchIndex = entry.items.findIndex(function (item) { return item.href === location.pathname; });
             var initialOpenState = entry.initialOpenState === true ? entry.initialOpenState : itemsMatchIndex >= 0;
             return (React.createElement(Dropdown, { key: entry.label, isPushed: isPushed, pushNav: pushNav, icon: iconElement, label: entry.label, status: entry.status, initialOpenState: initialOpenState, className: calloutClass, isActive: entry.items.some(function (item) { return item.href === location.pathname; }) }, isPushed &&
-                entry.items.map(function (item) { return (React.createElement(MenuEntry, { key: item.href, secondary: true, isActive: item.href === location.pathname, onClick: handleClick },
+                entry.items.map(function (item) { return (React.createElement(MenuEntry, { key: item.href, secondary: true, isActive: item.href === location.pathname, onClick: handleClick, isMobile: isMobile },
                     React.createElement(MenuLink, { href: item.href },
                         React.createElement(LinkLabelMemo, { isPushed: isPushed }, item.label),
                         item.status && (React.createElement(LinkStatus, { color: item.status.color, fontSize: "14px" }, item.status.text))))); })));
         }
-        return (React.createElement(MenuEntry, { key: entry.label, isActive: entry.href === location.pathname, className: calloutClass },
+        return (React.createElement(MenuEntry, { key: entry.label, isActive: entry.href === location.pathname, className: calloutClass, isMobile: isMobile },
             React.createElement(MenuLink, { href: entry.href, onClick: handleClick },
                 iconElement,
                 React.createElement(LinkLabelMemo, { isPushed: isPushed }, entry.label),

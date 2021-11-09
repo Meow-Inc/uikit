@@ -5,6 +5,7 @@ export interface Props {
     secondary?: boolean;
     isActive?: boolean;
     theme: DefaultTheme;
+    isMobile?: boolean;
 }
 declare const MenuEntry: import("styled-components").StyledComponent<"div", DefaultTheme, Props, never>;
 declare const LinkStatus: import("styled-components").StyledComponent<"div", DefaultTheme, import("../../../components/Text").TextProps & {

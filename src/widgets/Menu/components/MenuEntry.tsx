@@ -8,6 +8,7 @@ export interface Props {
   secondary?: boolean;
   isActive?: boolean;
   theme: DefaultTheme;
+  isMobile?: boolean;
 }
 
 const rainbowAnimation = keyframes`
@@ -37,7 +38,7 @@ const MenuEntry = styled.div<Props>`
   align-items: center;
   height: ${MENU_ENTRY_HEIGHT}px;
   padding: ${({ secondary }) => (secondary ? "0 20px" : "0 20px")};
-  padding: ${({ isPushed }) => (isPushed ? `0px 14px`:`0px 20px`)};
+  padding: ${({ isMobile }) => (isMobile ? `0px 14px`:`0px 20px`)};
 
   margin: ${({ secondary }) => (secondary ? "0 8px" : "0 0px")};
   font-size: ${({ secondary }) => (secondary ? "14px" : "16px")};
@@ -67,7 +68,7 @@ const MenuEntry = styled.div<Props>`
 
   a > svg {
     fill: ${({  isActive, theme }) => (!isActive ? theme.colors.textSubtle : theme.colors.menuSelectedColor)};
-    margin-right: ${({ isPushed }) => (isPushed ? `0px` : `12px`)};
+    margin-right: ${({ isMobile }) => (isMobile ? `0px` : `12px`)};
   }
 
   > svg:first-child {

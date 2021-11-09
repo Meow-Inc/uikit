@@ -52,7 +52,7 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
             >
               {isPushed &&
                 entry.items.map((item) => (
-                  <MenuEntry key={item.href} secondary isActive={item.href === location.pathname} onClick={handleClick} isPushed={isMobile}>
+                  <MenuEntry key={item.href} secondary isActive={item.href === location.pathname} onClick={handleClick} isMobile={isMobile}>
                     <MenuLink href={item.href}>
                       <LinkLabel isPushed={isPushed}>{item.label}</LinkLabel>
                       {item.status && (
@@ -67,7 +67,7 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
           );
         }
         return (
-          <MenuEntry key={entry.label} isActive={entry.href === location.pathname} className={calloutClass} isPushed={isMobile}>
+          <MenuEntry key={entry.label} isActive={entry.href === location.pathname} className={calloutClass} isMobile={isMobile}>
             <MenuLink href={entry.href} onClick={handleClick}>
               {iconElement}
               <LinkLabel isPushed={isPushed}>{entry.label}</LinkLabel>
