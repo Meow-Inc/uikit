@@ -5,5 +5,5 @@ interface Props extends PanelProps, PushedProps {
     isMobile: boolean;
     isSidebar: boolean;
 }
-declare const Panel: React.FC<Props>;
-export default Panel;
+declare const SideBar: React.FC<Props>;
+export default SideBar;

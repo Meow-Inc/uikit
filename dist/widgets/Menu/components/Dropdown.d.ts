@@ -8,6 +8,7 @@ interface Props extends PushedProps {
     className?: string;
     children: ReactNode;
     isActive?: boolean;
+    isMobile?: boolean;
 }
 declare const Dropdown: React.FC<Props>;
 export default Dropdown;

@@ -45,7 +45,6 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
               key={entry.label}
               isPushed={isPushed}
               pushNav={pushNav}
-              isMobile={isMobile}
               icon={iconElement}
               label={entry.label}
               status={entry.status}
