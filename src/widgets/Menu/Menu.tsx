@@ -29,7 +29,7 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   padding-right: 16px;
   width: 100%;
   height: ${MENU_HEIGHT}px;
-  background-color: ${({ theme }) => theme.nav.background};
+  background-color: ${({ theme }) => theme.colors.purple};
   border-bottom: solid 2px rgba(133, 133, 133, 0.1);
   z-index: 20;
   transform: translate3d(0, 0, 0);
@@ -86,12 +86,6 @@ const Menu: React.FC<NavProps> = ({
       const isBottomOfPage = window.document.body.clientHeight === currentOffset + window.innerHeight;
       const isTopOfPage = currentOffset === 0;
       // Always show the menu when user reach the top
-      if(!isTopOfPage) {
-        setShowMenu(false);
-        if(isTop) {
-          setIsTop(false)
-        }
-      }
       if (isTopOfPage) {
         setShowMenu(true);
         if(!isTop) {
@@ -100,6 +94,7 @@ const Menu: React.FC<NavProps> = ({
       }
       // Avoid triggering anything at the bottom because of layout shift
       else if (!isBottomOfPage) {
+        setIsTop(false)
         if (currentOffset < refPrevOffset.current) {
           // Has scroll up
           setShowMenu(true);

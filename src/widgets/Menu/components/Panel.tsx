@@ -16,7 +16,7 @@ interface Props extends PanelProps, PushedProps {
 const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean; isTopOfPage: boolean }>`
   position: fixed;
   padding-top: ${({ showMenu }) => (showMenu ? "0" : 0)};
-  background-color: ${({ isTopOfPage, theme }) => (isTopOfPage ? 'rgba(0,0,0,0)' : theme.nav.background)};
+  background-color: ${({ isTopOfPage, theme }) => (isTopOfPage ? 'rgba(0,0,0,0)' : theme.colors.purple)};
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -30,7 +30,7 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean; isTopOfPa
   overflow: ${({ isPushed }) => (isPushed ? "initial" : "hidden")};
   transform: translate3d(0, 0, 0);
   border-bottom: 2px solid rgba(133, 133, 133, 0.1);
-
+  border-radius: 0px 0px 24px 24px;
   ${({ isPushed }) => !isPushed && "white-space: nowrap;"};
 
   ${({ theme }) => theme.mediaQueries.nav} {
@@ -43,7 +43,7 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean; isTopOfPa
 
 const Panel: React.FC<Props> = (props) => {
   const { isPushed, showMenu, userBlock, isMobile, isTopOfPage } = props;
-  console.log('Props', props)
+  console.log('isTopOfPage', isTopOfPage)
   return (
     <StyledPanel isPushed={isPushed} showMenu={showMenu} isTopOfPage={isTopOfPage ? true : false}>
       <PanelHeader {...props} isMobile={isMobile ? true : false}/>

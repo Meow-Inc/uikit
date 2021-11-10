@@ -4061,12 +4061,12 @@ var PanelHeader = function (_a) {
 };
 var templateObject_1$9, templateObject_2$3, templateObject_3$1;
 
-var StyledPanel$1 = styled.div(templateObject_1$8 || (templateObject_1$8 = __makeTemplateObject(["\n  position: fixed;\n  padding-top: ", ";\n  background-color: ", ";\n  align-items: center;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  flex-shrink: 0;\n  top: 0;\n  height: 72px;\n  width: 100%;\n  transition: padding-top 0.2s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n  border-bottom: 2px solid rgba(133, 133, 133, 0.1);\n\n  ", ";\n\n  ", " {\n    // border-right: 2px solid rgba(133, 133, 133, 0.1);\n    // width: ", ";\n  }\n"], ["\n  position: fixed;\n  padding-top: ", ";\n  background-color: ", ";\n  align-items: center;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  flex-shrink: 0;\n  top: 0;\n  height: 72px;\n  width: 100%;\n  transition: padding-top 0.2s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n  border-bottom: 2px solid rgba(133, 133, 133, 0.1);\n\n  ", ";\n\n  ", " {\n    // border-right: 2px solid rgba(133, 133, 133, 0.1);\n    // width: ", ";\n  }\n"])), function (_a) {
+var StyledPanel$1 = styled.div(templateObject_1$8 || (templateObject_1$8 = __makeTemplateObject(["\n  position: fixed;\n  padding-top: ", ";\n  background-color: ", ";\n  align-items: center;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  flex-shrink: 0;\n  top: 0;\n  height: 72px;\n  width: 100%;\n  transition: padding-top 0.2s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n  border-bottom: 2px solid rgba(133, 133, 133, 0.1);\n  border-radius: 0px 0px 24px 24px;\n  ", ";\n\n  ", " {\n    // border-right: 2px solid rgba(133, 133, 133, 0.1);\n    // width: ", ";\n  }\n"], ["\n  position: fixed;\n  padding-top: ", ";\n  background-color: ", ";\n  align-items: center;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  flex-shrink: 0;\n  top: 0;\n  height: 72px;\n  width: 100%;\n  transition: padding-top 0.2s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n  border-bottom: 2px solid rgba(133, 133, 133, 0.1);\n  border-radius: 0px 0px 24px 24px;\n  ", ";\n\n  ", " {\n    // border-right: 2px solid rgba(133, 133, 133, 0.1);\n    // width: ", ";\n  }\n"])), function (_a) {
     var showMenu = _a.showMenu;
     return (showMenu ? "0" : 0);
 }, function (_a) {
     var isTopOfPage = _a.isTopOfPage, theme = _a.theme;
-    return (isTopOfPage ? 'rgba(0,0,0,0)' : theme.nav.background);
+    return (isTopOfPage ? 'rgba(0,0,0,0)' : theme.colors.purple);
 }, function (_a) {
     var isPushed = _a.isPushed;
     return (isPushed ? "initial" : "hidden");
@@ -4082,7 +4082,7 @@ var StyledPanel$1 = styled.div(templateObject_1$8 || (templateObject_1$8 = __mak
 });
 var Panel = function (props) {
     var isPushed = props.isPushed, showMenu = props.showMenu; props.userBlock; var isMobile = props.isMobile, isTopOfPage = props.isTopOfPage;
-    console.log('Props', props);
+    console.log('isTopOfPage', isTopOfPage);
     return (React.createElement(StyledPanel$1, { isPushed: isPushed, showMenu: showMenu, isTopOfPage: isTopOfPage ? true : false },
         React.createElement(PanelHeader, __assign({}, props, { isMobile: isMobile ? true : false })),
         React.createElement(PanelBody$1, __assign({}, props)),
@@ -4401,7 +4401,7 @@ styled.nav(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  po
     return (showMenu ? 0 : "-" + MENU_HEIGHT + "px");
 }, MENU_HEIGHT, function (_a) {
     var theme = _a.theme;
-    return theme.nav.background;
+    return theme.colors.purple;
 });
 var BodyWrapper = styled.div(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n"], ["\n  position: relative;\n  display: flex;\n"])));
 var Inner = styled.div(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s, margin-left 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  transform: translate3d(0, 0, 0);\n  max-width: 100%;\n"], ["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s, margin-left 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  transform: translate3d(0, 0, 0);\n  max-width: 100%;\n"])), function (_a) {
@@ -4430,12 +4430,6 @@ var Menu = function (_a) {
             var isBottomOfPage = window.document.body.clientHeight === currentOffset + window.innerHeight;
             var isTopOfPage = currentOffset === 0;
             // Always show the menu when user reach the top
-            if (!isTopOfPage) {
-                setShowMenu(false);
-                if (isTop) {
-                    setIsTop(false);
-                }
-            }
             if (isTopOfPage) {
                 setShowMenu(true);
                 if (!isTop) {
@@ -4444,6 +4438,7 @@ var Menu = function (_a) {
             }
             // Avoid triggering anything at the bottom because of layout shift
             else if (!isBottomOfPage) {
+                setIsTop(false);
                 if (currentOffset < refPrevOffset.current) {
                     // Has scroll up
                     setShowMenu(true);
