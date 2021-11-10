@@ -4443,13 +4443,11 @@ var Menu = function (_a) {
             var currentOffset = window.pageYOffset;
             var isBottomOfPage = window.document.body.clientHeight === currentOffset + window.innerHeight;
             var isTopOfPage = currentOffset < 50;
-            console.log('Is Top Of Page - Menu', isTopOfPage);
+            setIsTop(isTopOfPage);
+            console.log('isTop', isTop);
             // Always show the menu when user reach the top
             if (isTopOfPage) {
                 setShowMenu(true);
-                if (!isTop) {
-                    setIsTop(true);
-                }
             }
             // Avoid triggering anything at the bottom because of layout shift
             else if (!isBottomOfPage) {
@@ -4460,11 +4458,6 @@ var Menu = function (_a) {
                 else {
                     // Has scroll down
                     setShowMenu(false);
-                }
-            }
-            else {
-                if (isTop) {
-                    setIsTop(false);
                 }
             }
             refPrevOffset.current = currentOffset;
