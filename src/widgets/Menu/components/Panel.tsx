@@ -10,12 +10,13 @@ interface Props extends PanelProps, PushedProps {
   showMenu: boolean;
   isMobile: boolean;
   isSidebar: boolean;
+  isTopOfPage?: boolean;
 }
 
-const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
+const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean; isTopOfPage: boolean }>`
   position: fixed;
   padding-top: ${({ showMenu }) => (showMenu ? "0" : 0)};
-  background-color: ${({ theme }) => theme.nav.background};
+  background-color: ${({ isTopOfPage, theme }) => (isTopOfPage ? 'rgba(0,0,0,0)' : theme.nav.background)};
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -41,10 +42,10 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
 
 
 const Panel: React.FC<Props> = (props) => {
-  const { isPushed, showMenu, userBlock, isMobile } = props;
+  const { isPushed, showMenu, userBlock, isMobile, isTopOfPage } = props;
   console.log('Props', props)
   return (
-    <StyledPanel isPushed={isPushed} showMenu={showMenu}>
+    <StyledPanel isPushed={isPushed} showMenu={showMenu} isTopOfPage={isTopOfPage ? true : false}>
       <PanelHeader {...props} isMobile={isMobile ? true : false}/>
       <PanelBody {...props} />
       <PanelFooter {...props} />

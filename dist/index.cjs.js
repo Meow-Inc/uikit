@@ -4076,8 +4076,8 @@ var StyledPanel$1 = styled__default['default'].div(templateObject_1$8 || (templa
     var showMenu = _a.showMenu;
     return (showMenu ? "0" : 0);
 }, function (_a) {
-    var theme = _a.theme;
-    return theme.nav.background;
+    var isTopOfPage = _a.isTopOfPage, theme = _a.theme;
+    return (isTopOfPage ? 'rgba(0,0,0,0)' : theme.nav.background);
 }, function (_a) {
     var isPushed = _a.isPushed;
     return (isPushed ? "initial" : "hidden");
@@ -4092,9 +4092,9 @@ var StyledPanel$1 = styled__default['default'].div(templateObject_1$8 || (templa
     return (isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED) + "px";
 });
 var Panel = function (props) {
-    var isPushed = props.isPushed, showMenu = props.showMenu; props.userBlock; var isMobile = props.isMobile;
+    var isPushed = props.isPushed, showMenu = props.showMenu; props.userBlock; var isMobile = props.isMobile, isTopOfPage = props.isTopOfPage;
     console.log('Props', props);
-    return (React__default['default'].createElement(StyledPanel$1, { isPushed: isPushed, showMenu: showMenu },
+    return (React__default['default'].createElement(StyledPanel$1, { isPushed: isPushed, showMenu: showMenu, isTopOfPage: isTopOfPage ? true : false },
         React__default['default'].createElement(PanelHeader, __assign({}, props, { isMobile: isMobile ? true : false })),
         React__default['default'].createElement(PanelBody$1, __assign({}, props)),
         React__default['default'].createElement(PanelFooter, __assign({}, props))));
@@ -4428,14 +4428,23 @@ var Menu = function (_a) {
     var _b = React.useState(!isMobile), isPushed = _b[0], setIsPushed = _b[1];
     var _c = React.useState(true), showMenu = _c[0], setShowMenu = _c[1];
     var refPrevOffset = React.useRef(window.pageYOffset);
+    var _d = React.useState(true), isTop = _d[0], setIsTop = _d[1];
     React.useEffect(function () {
         var handleScroll = function () {
             var currentOffset = window.pageYOffset;
             var isBottomOfPage = window.document.body.clientHeight === currentOffset + window.innerHeight;
             var isTopOfPage = currentOffset === 0;
             // Always show the menu when user reach the top
+            if (!isTopOfPage) {
+                if (isTop) {
+                    setIsTop(false);
+                }
+            }
             if (isTopOfPage) {
                 setShowMenu(true);
+                if (!isTop) {
+                    setIsTop(true);
+                }
             }
             // Avoid triggering anything at the bottom because of layout shift
             else if (!isBottomOfPage) {
@@ -4467,7 +4476,7 @@ var Menu = function (_a) {
     return (React__default['default'].createElement(Wrapper, null,
         React__default['default'].createElement(BodyWrapper, null,
             React__default['default'].createElement(SideBar, { isSidebar: true, isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links, userBlock: React__default['default'].createElement(UserBlock$1, { account: account, login: login, logout: logout }) }),
-            React__default['default'].createElement(Panel, { isSidebar: false, isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links, userBlock: React__default['default'].createElement(UserBlock$1, { account: account, login: login, logout: logout }) }),
+            React__default['default'].createElement(Panel, { isTopOfPage: isTop, isSidebar: false, isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links, userBlock: React__default['default'].createElement(UserBlock$1, { account: account, login: login, logout: logout }) }),
             React__default['default'].createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
             React__default['default'].createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };

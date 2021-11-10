@@ -79,14 +79,23 @@ const Menu: React.FC<NavProps> = ({
   const [isPushed, setIsPushed] = useState(!isMobile);
   const [showMenu, setShowMenu] = useState(true);
   const refPrevOffset = useRef(window.pageYOffset);
+  const [isTop, setIsTop] = useState(true)
   useEffect(() => {
     const handleScroll = () => {
       const currentOffset = window.pageYOffset;
       const isBottomOfPage = window.document.body.clientHeight === currentOffset + window.innerHeight;
       const isTopOfPage = currentOffset === 0;
       // Always show the menu when user reach the top
+      if(!isTopOfPage) {
+        if(isTop) {
+          setIsTop(false)
+        }
+      }
       if (isTopOfPage) {
         setShowMenu(true);
+        if(!isTop) {
+          setIsTop(true)
+        }
       }
       // Avoid triggering anything at the bottom because of layout shift
       else if (!isBottomOfPage) {
@@ -136,6 +145,7 @@ const Menu: React.FC<NavProps> = ({
           userBlock={<UserBlock account={account} login={login} logout={logout} />}
         />
         <Panel
+          isTopOfPage={isTop}
           isSidebar={false}
           isPushed={isPushed}
           isMobile={isMobile}
