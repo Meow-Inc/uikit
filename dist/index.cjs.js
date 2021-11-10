@@ -222,6 +222,7 @@ var bannerColorsDark = {
 var additionalColors = {
     binance: "#F0B90B",
     overlay: "#060506",
+    purpleDark: "#8a5eeb",
 };
 var shadowsLight = {
     stickyHeader: "rgba(47 42 68  / 10%) 0px 56px 46px -25px",
@@ -3821,7 +3822,7 @@ var MenuEntry = styled__default['default'].div(templateObject_3$4 || (templateOb
     return theme.colors.contrast;
 }, function (_a) {
     var isActive = _a.isActive, theme = _a.theme;
-    return (isActive ? "" + theme.colors.menuSelectedBackground : "none");
+    return (isActive ? "" + theme.colors.purpleDark : "none");
 }, function (_a) {
     var secondary = _a.secondary;
     return (secondary ? "8px" : "12px");
@@ -4075,7 +4076,7 @@ var PanelHeader = function (_a) {
 };
 var templateObject_1$9, templateObject_2$3, templateObject_3$1;
 
-var StyledPanel$1 = styled__default['default'].div(templateObject_1$8 || (templateObject_1$8 = __makeTemplateObject(["\n  position: fixed;\n  padding-top: ", ";\n  background-color: ", ";\n  align-items: center;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  flex-shrink: 0;\n  top: 0;\n  height: 72px;\n  width: 100%;\n  transition: padding-top 0.2s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n  border-bottom: 2px solid rgba(133, 133, 133, 0.1);\n  border-radius: 0px 0px 24px 24px;\n  ", ";\n\n  ", " {\n    // border-right: 2px solid rgba(133, 133, 133, 0.1);\n    // width: ", ";\n  }\n"], ["\n  position: fixed;\n  padding-top: ", ";\n  background-color: ", ";\n  align-items: center;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  flex-shrink: 0;\n  top: 0;\n  height: 72px;\n  width: 100%;\n  transition: padding-top 0.2s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n  border-bottom: 2px solid rgba(133, 133, 133, 0.1);\n  border-radius: 0px 0px 24px 24px;\n  ", ";\n\n  ", " {\n    // border-right: 2px solid rgba(133, 133, 133, 0.1);\n    // width: ", ";\n  }\n"])), function (_a) {
+var StyledPanel$1 = styled__default['default'].div(templateObject_1$8 || (templateObject_1$8 = __makeTemplateObject(["\n  position: fixed;\n  padding-top: ", ";\n  background-color: ", ";\n  transition: background-color 0.25s linear;\n  align-items: center;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  flex-shrink: 0;\n  top: 0;\n  height: 72px;\n  width: 100%;\n  transition: padding-top 0.2s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n  border-radius: 0px 0px 24px 24px;\n  ", ";\n\n  ", " {\n    // border-right: 2px solid rgba(133, 133, 133, 0.1);\n    // width: ", ";\n  }\n"], ["\n  position: fixed;\n  padding-top: ", ";\n  background-color: ", ";\n  transition: background-color 0.25s linear;\n  align-items: center;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  flex-shrink: 0;\n  top: 0;\n  height: 72px;\n  width: 100%;\n  transition: padding-top 0.2s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n  border-radius: 0px 0px 24px 24px;\n  ", ";\n\n  ", " {\n    // border-right: 2px solid rgba(133, 133, 133, 0.1);\n    // width: ", ";\n  }\n"])), function (_a) {
     var showMenu = _a.showMenu;
     return (showMenu ? "0" : 0);
 }, function (_a) {
@@ -4442,7 +4443,7 @@ var Menu = function (_a) {
         var handleScroll = function () {
             var currentOffset = window.pageYOffset;
             var isBottomOfPage = window.document.body.clientHeight === currentOffset + window.innerHeight;
-            var isTopOfPage = currentOffset < 50;
+            var isTopOfPage = currentOffset < 20;
             setIsTop(isTopOfPage);
             console.log('isTop', isTop);
             // Always show the menu when user reach the top

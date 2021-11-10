@@ -25,6 +25,7 @@ export declare const bannerColorsDark: {
 export declare const additionalColors: {
     binance: string;
     overlay: string;
+    purpleDark: string;
 };
 export declare const shadowsLight: {
     stickyHeader: string;

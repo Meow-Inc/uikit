@@ -48,6 +48,7 @@ export type Colors = {
   yellow: string;
   pink: string;
   purple: string;
+  purpleDark: string;
   teal: string;
   palePrimary: string;
   primary: string;

@@ -17,6 +17,7 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean; isTopOfPa
   position: fixed;
   padding-top: ${({ showMenu }) => (showMenu ? "0" : 0)};
   background-color: ${({ isTopOfPage, theme }) => (isTopOfPage ? 'rgba(0,0,0,0)' : theme.colors.purple)};
+  transition: background-color 0.25s linear;
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -29,7 +30,6 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean; isTopOfPa
   z-index: 11;
   overflow: ${({ isPushed }) => (isPushed ? "initial" : "hidden")};
   transform: translate3d(0, 0, 0);
-  border-bottom: 2px solid rgba(133, 133, 133, 0.1);
   border-radius: 0px 0px 24px 24px;
   ${({ isPushed }) => !isPushed && "white-space: nowrap;"};
 

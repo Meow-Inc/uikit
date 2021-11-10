@@ -45,7 +45,7 @@ const MenuEntry = styled.div<Props>`
   font-size: ${({ secondary }) => (secondary ? "14px" : "16px")};
   background-color: ${({ secondary, theme }) => (secondary ? "transparent" : "transparent")};
   color: ${({ theme }) => theme.colors.contrast};
-  background-color: ${({ isActive, theme }) => (isActive ? `${theme.colors.menuSelectedBackground}` : "none")};
+  background-color: ${({ isActive, theme }) => (isActive ? `${theme.colors.purpleDark}` : "none")};
   border-radius: ${({ secondary }) => (secondary ? "8px" : "12px")};
 
   a {
