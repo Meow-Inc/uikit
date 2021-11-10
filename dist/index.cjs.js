@@ -215,8 +215,8 @@ var bannerColorsLight = {
 };
 var bannerColorsDark = {
     yellow: "#ffb80b",
-    pink: "#9a6bff",
-    purple: "#9c58f6",
+    pink: "#24bfec",
+    purple: "#9a6bff",
     teal: "#2db1d9",
 };
 var additionalColors = {
@@ -4443,6 +4443,7 @@ var Menu = function (_a) {
             var currentOffset = window.pageYOffset;
             var isBottomOfPage = window.document.body.clientHeight === currentOffset + window.innerHeight;
             var isTopOfPage = currentOffset < 50;
+            console.log('Is Top Of Page - Menu', isTopOfPage);
             // Always show the menu when user reach the top
             if (isTopOfPage) {
                 setShowMenu(true);
@@ -4452,9 +4453,6 @@ var Menu = function (_a) {
             }
             // Avoid triggering anything at the bottom because of layout shift
             else if (!isBottomOfPage) {
-                if (isTop) {
-                    setIsTop(false);
-                }
                 if (currentOffset < refPrevOffset.current) {
                     // Has scroll up
                     setShowMenu(true);
@@ -4462,6 +4460,11 @@ var Menu = function (_a) {
                 else {
                     // Has scroll down
                     setShowMenu(false);
+                }
+            }
+            else {
+                if (isTop) {
+                    setIsTop(false);
                 }
             }
             refPrevOffset.current = currentOffset;

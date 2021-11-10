@@ -21,8 +21,8 @@ export const bannerColorsLight =  {
 
 export const bannerColorsDark =  {
   yellow: "#ffb80b",
-  pink: "#9a6bff",
-  purple: "#9c58f6",
+  pink: "#24bfec",
+  purple: "#9a6bff",
   teal: "#2db1d9",
 }
 
