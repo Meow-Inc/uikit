@@ -4061,8 +4061,7 @@ var PanelHeader = function (_a) {
     var homeLink = links.find(function (link) { return link.label === "Home"; });
     return (React__default['default'].createElement(Container$1, { isPushed: false },
         isMobile &&
-            React__default['default'].createElement(IconButton, { className: "cog", variant: "text", onClick: function () { return pushNav(!isPushed); } },
-                React__default['default'].createElement(Icon$1e, null)),
+            React__default['default'].createElement(IconButton, { className: "cog", variant: "text", onClick: function () { return pushNav(!isPushed); } }, !isPushed ? React__default['default'].createElement(Icon$1h, null) : React__default['default'].createElement(Icon$1j, null)),
         React__default['default'].createElement(Logo$1, { isPushed: isMobile ? true : false, togglePush: function () { return pushNav(!isPushed); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" })));
 };
 var templateObject_1$9, templateObject_2$3, templateObject_3$1;
