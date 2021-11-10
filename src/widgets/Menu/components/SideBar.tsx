@@ -22,7 +22,8 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean; isMobile:
   flex-direction: column;
   justify-content: space-between;
   flex-shrink: 0;
-  top: 71px;
+  padding-top: ${({ isMobile }) => !isMobile ? "0px" : '71px'};
+  top: ${({ isMobile }) => !isMobile ? "71px" : '0px'};
   left: ${({ isPushed }) => !isPushed ? "-220px" : '0px'};
   height: 100%;
   width: 220px;

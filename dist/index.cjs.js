@@ -4133,12 +4133,18 @@ var PanelBody = function (_a) {
 };
 var templateObject_1$7;
 
-var StyledPanel = styled__default['default'].div(templateObject_1$6 || (templateObject_1$6 = __makeTemplateObject(["\n  position: fixed;\n  padding-top: ", ";\n  background-color: ", ";\n  align-items: center;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  top: 71px;\n  left: ", ";\n  height: 100%;\n  width: 220px;\n  transition: padding-top 0.2s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n  border-bottom: 2px solid rgba(133, 133, 133, 0.1);\n  display: ", ";\n\n  ", ";\n\n  ", " {\n    // border-right: 2px solid rgba(133, 133, 133, 0.1);\n    // width: ", ";\n  }\n"], ["\n  position: fixed;\n  padding-top: ", ";\n  background-color: ", ";\n  align-items: center;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  top: 71px;\n  left: ", ";\n  height: 100%;\n  width: 220px;\n  transition: padding-top 0.2s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n  border-bottom: 2px solid rgba(133, 133, 133, 0.1);\n  display: ", ";\n\n  ", ";\n\n  ", " {\n    // border-right: 2px solid rgba(133, 133, 133, 0.1);\n    // width: ", ";\n  }\n"])), function (_a) {
+var StyledPanel = styled__default['default'].div(templateObject_1$6 || (templateObject_1$6 = __makeTemplateObject(["\n  position: fixed;\n  padding-top: ", ";\n  background-color: ", ";\n  align-items: center;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  padding-top: ", ";\n  top: ", ";\n  left: ", ";\n  height: 100%;\n  width: 220px;\n  transition: padding-top 0.2s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n  border-bottom: 2px solid rgba(133, 133, 133, 0.1);\n  display: ", ";\n\n  ", ";\n\n  ", " {\n    // border-right: 2px solid rgba(133, 133, 133, 0.1);\n    // width: ", ";\n  }\n"], ["\n  position: fixed;\n  padding-top: ", ";\n  background-color: ", ";\n  align-items: center;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  padding-top: ", ";\n  top: ", ";\n  left: ", ";\n  height: 100%;\n  width: 220px;\n  transition: padding-top 0.2s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n  border-bottom: 2px solid rgba(133, 133, 133, 0.1);\n  display: ", ";\n\n  ", ";\n\n  ", " {\n    // border-right: 2px solid rgba(133, 133, 133, 0.1);\n    // width: ", ";\n  }\n"])), function (_a) {
     var showMenu = _a.showMenu;
     return (showMenu ? "0" : 0);
 }, function (_a) {
     var theme = _a.theme;
     return theme.nav.background;
+}, function (_a) {
+    var isMobile = _a.isMobile;
+    return !isMobile ? "0px" : '71px';
+}, function (_a) {
+    var isMobile = _a.isMobile;
+    return !isMobile ? "71px" : '0px';
 }, function (_a) {
     var isPushed = _a.isPushed;
     return !isPushed ? "-220px" : '0px';
