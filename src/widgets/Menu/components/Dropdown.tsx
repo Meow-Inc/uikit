@@ -23,6 +23,11 @@ const Container = styled.div<{ isMobile: boolean }>`
   flex-shrink: 0;
   position: relative;
   width: ${({ isMobile }) => (isMobile ? `100%`:`initial`)};
+
+  svg {
+    fill: ${({ theme }) => theme.colors.contrast};
+    opacity: 0.5;
+  }
 `;
 
 const DropdownContent = styled.div<{ isOpen: boolean; isPushed: boolean; maxHeight: number }>`

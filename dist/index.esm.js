@@ -3782,9 +3782,9 @@ var rainbowAnimation = keyframes(templateObject_1$f || (templateObject_1$f = __m
 var LinkLabel = styled(Text)(templateObject_2$7 || (templateObject_2$7 = __makeTemplateObject(["\n  ", ";\n  flex-grow: 1;\n  transition: opacity 0.4s;\n"], ["\n  ",
     ";\n  flex-grow: 1;\n  transition: opacity 0.4s;\n"])), function (_a) {
     var isPushed = _a.isPushed, theme = _a.theme;
-    return (isPushed ? "\n    color: " + theme.colors.textSubtle + ";\n  " : "\n    display: block!important;\n  ");
+    return (isPushed ? "\n    color: " + theme.colors.contrast + ";\n  " : "\n    display: block!important;\n  ");
 });
-var MenuEntry = styled.div(templateObject_3$4 || (templateObject_3$4 = __makeTemplateObject(["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  // padding: ", ";\n  width: ", ";\n\n  margin: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  background-color: ", ";\n  border-radius: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  a > div {\n    color: ", ";\n  }\n\n  a > svg {\n    fill: ", ";\n    // margin-right: ", ";\n  }\n\n  > svg:first-child {\n    margin-right: 12px;\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"], ["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  // padding: ", ";\n  width: ", ";\n\n  margin: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  background-color: ", ";\n  border-radius: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  a > div {\n    color: ", ";\n  }\n\n  a > svg {\n    fill: ", ";\n    // margin-right: ", ";\n  }\n\n  > svg:first-child {\n    margin-right: 12px;\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"])), MENU_ENTRY_HEIGHT, function (_a) {
+var MenuEntry = styled.div(templateObject_3$4 || (templateObject_3$4 = __makeTemplateObject(["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  // padding: ", ";\n  width: ", ";\n\n  margin: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  background-color: ", ";\n  border-radius: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  a > div {\n    color: ", ";\n  }\n\n  a > svg {\n    fill: ", ";\n    // margin-right: ", ";\n    opacity: 0.5;\n  }\n\n  > svg:first-child {\n    margin-right: 12px;\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"], ["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  // padding: ", ";\n  width: ", ";\n\n  margin: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  background-color: ", ";\n  border-radius: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  a > div {\n    color: ", ";\n  }\n\n  a > svg {\n    fill: ", ";\n    // margin-right: ", ";\n    opacity: 0.5;\n  }\n\n  > svg:first-child {\n    margin-right: 12px;\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"])), MENU_ENTRY_HEIGHT, function (_a) {
     var secondary = _a.secondary;
     return (secondary ? "0 20px" : "0 20px");
 }, function (_a) {
@@ -3804,7 +3804,7 @@ var MenuEntry = styled.div(templateObject_3$4 || (templateObject_3$4 = __makeTem
     return (secondary ? "transparent" : "transparent");
 }, function (_a) {
     var theme = _a.theme;
-    return theme.colors.textSubtle;
+    return theme.colors.contrast;
 }, function (_a) {
     var isActive = _a.isActive, theme = _a.theme;
     return (isActive ? "" + theme.colors.menuSelectedBackground : "none");
@@ -3819,10 +3819,10 @@ var MenuEntry = styled.div(templateObject_3$4 || (templateObject_3$4 = __makeTem
     return (!isActive ? theme.colors.menuHoverBackground : theme.colors.menuSelectedBackground);
 }, function (_a) {
     var isActive = _a.isActive, theme = _a.theme;
-    return (!isActive ? theme.colors.textSubtle : theme.colors.menuSelectedColor);
+    return (!isActive ? theme.colors.contrast : theme.colors.contrast);
 }, function (_a) {
     var isActive = _a.isActive, theme = _a.theme;
-    return (!isActive ? theme.colors.textSubtle : theme.colors.menuSelectedColor);
+    return (!isActive ? theme.colors.contrast : theme.colors.contrast);
 }, function (_a) {
     var isMobile = _a.isMobile;
     return (isMobile ? "0px" : "12px");
@@ -3867,9 +3867,12 @@ function useOnClickOutside(ref, handler) {
     }, [ref, handler]);
 }
 
-var Container$4 = styled.div(templateObject_1$e || (templateObject_1$e = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  flex-shrink: 0;\n  position: relative;\n  width: ", ";\n"], ["\n  display: flex;\n  flex-direction: column;\n  flex-shrink: 0;\n  position: relative;\n  width: ", ";\n"])), function (_a) {
+var Container$4 = styled.div(templateObject_1$e || (templateObject_1$e = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  flex-shrink: 0;\n  position: relative;\n  width: ", ";\n\n  svg {\n    fill: ", ";\n    opacity: 0.5;\n  }\n"], ["\n  display: flex;\n  flex-direction: column;\n  flex-shrink: 0;\n  position: relative;\n  width: ", ";\n\n  svg {\n    fill: ", ";\n    opacity: 0.5;\n  }\n"])), function (_a) {
     var isMobile = _a.isMobile;
     return (isMobile ? "100%" : "initial");
+}, function (_a) {
+    var theme = _a.theme;
+    return theme.colors.contrast;
 });
 var DropdownContent = styled.div(templateObject_2$6 || (templateObject_2$6 = __makeTemplateObject(["\n  max-height: ", ";\n  transition: max-height 0.3s ease-out;\n  overflow: hidden;\n  border-color: ", ";\n  padding: ", ";\n  background-color: ", ";\n  box-shadow: ", ";\n  border-radius: 0px 0px 12px 12px;\n  top: 60px;\n  position: absolute;\n  width: 100%;\n"], ["\n  max-height: ", ";\n  transition: max-height 0.3s ease-out;\n  overflow: hidden;\n  border-color: ", ";\n  padding: ", ";\n  background-color: ", ";\n  box-shadow: ", ";\n  border-radius: 0px 0px 12px 12px;\n  top: 60px;\n  position: absolute;\n  width: 100%;\n"])), function (_a) {
     var isOpen = _a.isOpen, maxHeight = _a.maxHeight;
@@ -3961,7 +3964,7 @@ var CakePrice = function (_a) {
     var cakePriceUsd = _a.cakePriceUsd;
     Icons$2['LogoIcon'];
     return cakePriceUsd ? (React.createElement(PriceLink, { href: "https://pancakeswap.info/token/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82", target: "_blank" },
-        React.createElement(Text, { color: "textSubtle", bold: true, ml: "8px" }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 }));
+        React.createElement(Text, { color: "contrast", bold: true, ml: "8px" }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 }));
 };
 var CakePrice$1 = React.memo(CakePrice);
 var templateObject_1$c;
@@ -4422,6 +4425,7 @@ var Menu = function (_a) {
             var isTopOfPage = currentOffset === 0;
             // Always show the menu when user reach the top
             if (!isTopOfPage) {
+                setShowMenu(false);
                 if (isTop) {
                     setIsTop(false);
                 }

@@ -87,6 +87,7 @@ const Menu: React.FC<NavProps> = ({
       const isTopOfPage = currentOffset === 0;
       // Always show the menu when user reach the top
       if(!isTopOfPage) {
+        setShowMenu(false);
         if(isTop) {
           setIsTop(false)
         }

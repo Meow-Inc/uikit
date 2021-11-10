@@ -23,7 +23,7 @@ const rainbowAnimation = keyframes`
 
 const LinkLabel = styled(Text)<{ isPushed: boolean }>`
   ${({ isPushed, theme }) => (isPushed ? `
-    color: ${theme.colors.textSubtle};
+    color: ${theme.colors.contrast};
   `:`
     display: block!important;
   `)};
@@ -44,7 +44,7 @@ const MenuEntry = styled.div<Props>`
   margin: ${({ secondary }) => (secondary ? "0 8px" : "0 0px")};
   font-size: ${({ secondary }) => (secondary ? "14px" : "16px")};
   background-color: ${({ secondary, theme }) => (secondary ? "transparent" : "transparent")};
-  color: ${({ theme }) => theme.colors.textSubtle};
+  color: ${({ theme }) => theme.colors.contrast};
   background-color: ${({ isActive, theme }) => (isActive ? `${theme.colors.menuSelectedBackground}` : "none")};
   border-radius: ${({ secondary }) => (secondary ? "8px" : "12px")};
 
@@ -64,12 +64,13 @@ const MenuEntry = styled.div<Props>`
   }
 
   a > div {
-    color: ${({  isActive, theme }) => (!isActive ? theme.colors.textSubtle : theme.colors.menuSelectedColor)};
+    color: ${({  isActive, theme }) => (!isActive ? theme.colors.contrast : theme.colors.contrast)};
   }
 
   a > svg {
-    fill: ${({  isActive, theme }) => (!isActive ? theme.colors.textSubtle : theme.colors.menuSelectedColor)};
+    fill: ${({  isActive, theme }) => (!isActive ? theme.colors.contrast : theme.colors.contrast)};
     // margin-right: ${({ isMobile }) => (isMobile ? `0px` : `12px`)};
+    opacity: 0.5;
   }
 
   > svg:first-child {
