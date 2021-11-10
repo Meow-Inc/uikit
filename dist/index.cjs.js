@@ -98,22 +98,22 @@ Svg.defaultProps = {
 };
 var templateObject_1$Z, templateObject_2$p, templateObject_3$d;
 
-var Icon$1I = function (props) {
+var Icon$1J = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React__default['default'].createElement("path", { d: "M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM15.88 8.29L10 14.17L8.12 12.29C7.73 11.9 7.1 11.9 6.71 12.29C6.32 12.68 6.32 13.31 6.71 13.7L9.3 16.29C9.69 16.68 10.32 16.68 10.71 16.29L17.3 9.7C17.69 9.31 17.69 8.68 17.3 8.29C16.91 7.9 16.27 7.9 15.88 8.29Z" })));
 };
 
-var Icon$1H = function (props) {
+var Icon$1I = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React__default['default'].createElement("path", { d: "M12 7C12.55 7 13 7.45 13 8V12C13 12.55 12.55 13 12 13C11.45 13 11 12.55 11 12V8C11 7.45 11.45 7 12 7ZM11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20ZM13 17H11V15H13V17Z" })));
 };
 
-var Icon$1G = function (props) {
+var Icon$1H = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React__default['default'].createElement("path", { d: "M12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22ZM12 4C16.42 4 20 7.58 20 12C20 13.85 19.37 15.55 18.31 16.9L7.1 5.69C8.45 4.63 10.15 4 12 4ZM5.69 7.1L16.9 18.31C15.55 19.37 13.85 20 12 20C7.58 20 4 16.42 4 12C4 10.15 4.63 8.45 5.69 7.1Z" })));
 };
 
-var Icon$1F = function (props) {
+var Icon$1G = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React__default['default'].createElement("path", { d: "M11 7H13V9H11V7ZM12 17C12.55 17 13 16.55 13 16V12C13 11.45 12.55 11 12 11C11.45 11 11 11.45 11 12V16C11 16.55 11.45 17 12 17ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" })));
 };
@@ -467,45 +467,51 @@ var IconButton = styled__default['default'](Button)(templateObject_1$V || (templ
 });
 var templateObject_1$V;
 
-var Icon$1E = function (props) {
+var Icon$1F = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React__default['default'].createElement("path", { d: "M18 13H13V18C13 18.55 12.55 19 12 19C11.45 19 11 18.55 11 18V13H6C5.45 13 5 12.55 5 12C5 11.45 5.45 11 6 11H11V6C11 5.45 11.45 5 12 5C12.55 5 13 5.45 13 6V11H18C18.55 11 19 11.45 19 12C19 12.55 18.55 13 18 13Z" })));
 };
 
-var Icon$1D = function (props) {
+var Icon$1E = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React__default['default'].createElement("path", { d: "M19 11H7.82998L12.71 6.12C13.1 5.73 13.1 5.09 12.71 4.7C12.32 4.31 11.69 4.31 11.3 4.7L4.70998 11.29C4.31998 11.68 4.31998 12.31 4.70998 12.7L11.3 19.29C11.69 19.68 12.32 19.68 12.71 19.29C13.1 18.9 13.1 18.27 12.71 17.88L7.82998 13H19C19.55 13 20 12.55 20 12C20 11.45 19.55 11 19 11Z" })));
 };
 
-var Icon$1C = function (props) {
+var Icon$1D = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React__default['default'].createElement("path", { d: "M11 5V16.17L6.11997 11.29C5.72997 10.9 5.08997 10.9 4.69997 11.29C4.30997 11.68 4.30997 12.31 4.69997 12.7L11.29 19.29C11.68 19.68 12.31 19.68 12.7 19.29L19.29 12.7C19.68 12.31 19.68 11.68 19.29 11.29C18.9 10.9 18.27 10.9 17.88 11.29L13 16.17V5C13 4.45 12.55 4 12 4C11.45 4 11 4.45 11 5Z" })));
 };
 
-var Icon$1B = function (props) {
+var Icon$1C = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React__default['default'].createElement("path", { d: "M8.71005 11.71L11.3001 14.3C11.6901 14.69 12.3201 14.69 12.7101 14.3L15.3001 11.71C15.9301 11.08 15.4801 10 14.5901 10H9.41005C8.52005 10 8.08005 11.08 8.71005 11.71Z" })));
 };
 
-var Icon$1A = function (props) {
+var Icon$1B = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React__default['default'].createElement("path", { d: "M8.71005 12.29L11.3001 9.69997C11.6901 9.30997 12.3201 9.30997 12.7101 9.69997L15.3001 12.29C15.9301 12.92 15.4801 14 14.5901 14H9.41005C8.52005 14 8.08005 12.92 8.71005 12.29Z" })));
 };
 
-var Icon$1z = function (props) {
+var Icon$1A = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React__default['default'].createElement("path", { d: "M5 13H16.17L11.29 17.88C10.9 18.27 10.9 18.91 11.29 19.3C11.68 19.69 12.31 19.69 12.7 19.3L19.29 12.71C19.68 12.32 19.68 11.69 19.29 11.3L12.71 4.7C12.32 4.31 11.69 4.31 11.3 4.7C10.91 5.09 10.91 5.72 11.3 6.11L16.17 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13Z" })));
 };
 
-var Icon$1y = function (props) {
+var Icon$1z = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React__default['default'].createElement("path", { d: "M13 19V7.83001L17.88 12.71C18.27 13.1 18.91 13.1 19.3 12.71C19.69 12.32 19.69 11.69 19.3 11.3L12.71 4.71001C12.32 4.32001 11.69 4.32001 11.3 4.71001L4.69997 11.29C4.30997 11.68 4.30997 12.31 4.69997 12.7C5.08997 13.09 5.71997 13.09 6.10997 12.7L11 7.83001V19C11 19.55 11.45 20 12 20C12.55 20 13 19.55 13 19Z" })));
 };
 
-var Icon$1x = function (props) {
+var Icon$1y = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React__default['default'].createElement("path", { d: "M12 6V7.79C12 8.24 12.54 8.46 12.85 8.14L15.64 5.35C15.84 5.15 15.84 4.84 15.64 4.64L12.85 1.85C12.54 1.54 12 1.76 12 2.21V4C7.58 4 4 7.58 4 12C4 13.04 4.2 14.04 4.57 14.95C4.84 15.62 5.7 15.8 6.21 15.29C6.48 15.02 6.59 14.61 6.44 14.25C6.15 13.56 6 12.79 6 12C6 8.69 8.69 6 12 6ZM17.79 8.71C17.52 8.98 17.41 9.4 17.56 9.75C17.84 10.45 18 11.21 18 12C18 15.31 15.31 18 12 18V16.21C12 15.76 11.46 15.54 11.15 15.86L8.36 18.65C8.16 18.85 8.16 19.16 8.36 19.36L11.15 22.15C11.46 22.46 12 22.24 12 21.8V20C16.42 20 20 16.42 20 12C20 10.96 19.8 9.96 19.43 9.05C19.16 8.38 18.3 8.2 17.79 8.71Z" })));
 };
+
+var Icon$1x = function (props) {
+    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 448 512" }, props),
+        React__default['default'].createElement("path", { d: "M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" })));
+};
+// <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
 
 var Icon$1w = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 16 16" }, props),
@@ -1287,14 +1293,14 @@ var getIcon = function (variant) {
     if (variant === void 0) { variant = variants$3.INFO; }
     switch (variant) {
         case variants$3.DANGER:
-            return Icon$1G;
-        case variants$3.WARNING:
             return Icon$1H;
-        case variants$3.SUCCESS:
+        case variants$3.WARNING:
             return Icon$1I;
+        case variants$3.SUCCESS:
+            return Icon$1J;
         case variants$3.INFO:
         default:
-            return Icon$1F;
+            return Icon$1G;
     }
 };
 var IconLabel = styled__default['default'].div(templateObject_1$S || (templateObject_1$S = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 8px 0 0 8px;\n  color: ", ";\n  padding: 12px;\n"], ["\n  background-color: ", ";\n  border-radius: 8px 0 0 8px;\n  color: ", ";\n  padding: 12px;\n"])), getThemeColor, function (_a) {
@@ -1858,7 +1864,7 @@ var variants$2 = {
 
 var Icons$4 = {
     warning: Icon$u,
-    danger: Icon$1H,
+    danger: Icon$1I,
 };
 var MessageContainer = styled__default['default'].div(templateObject_1$y || (templateObject_1$y = __makeTemplateObject(["\n  display: flex;\n  background-color: gray;\n  padding: 16px;\n  border-radius: 16px;\n  border: solid 1px;\n\n  svg {\n    align-self: flex-start;\n  }\n\n  ", "\n  ", "\n"], ["\n  display: flex;\n  background-color: gray;\n  padding: 16px;\n  border-radius: 16px;\n  border: solid 1px;\n\n  svg {\n    align-self: flex-start;\n  }\n\n  ", "\n  ",
     "\n"])), styledSystem.space, styledSystem.variant({
@@ -3357,7 +3363,7 @@ var ModalCloseButton = function (_a) {
 var ModalBackButton = function (_a) {
     var onBack = _a.onBack;
     return (React__default['default'].createElement(IconButton, { variant: "text", onClick: onBack, "area-label": "go back", mr: "8px" },
-        React__default['default'].createElement(Icon$1D, { color: "primary" })));
+        React__default['default'].createElement(Icon$1E, { color: "primary" })));
 };
 var ModalContainer = styled__default['default'](Box)(templateObject_4$4 || (templateObject_4$4 = __makeTemplateObject(["\n  overflow: hidden;\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 32px;\n  width: 100%;\n  z-index: ", ";\n\n  ", " {\n    width: auto;\n    min-width: ", ";\n    max-width: 100%;\n  }\n"], ["\n  overflow: hidden;\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 32px;\n  width: 100%;\n  z-index: ", ";\n\n  ", " {\n    width: auto;\n    min-width: ", ";\n    max-width: 100%;\n  }\n"])), function (_a) {
     var theme = _a.theme;
@@ -3916,7 +3922,7 @@ var Dropdown = function (_a) {
             icon,
             React__default['default'].createElement(LinkLabelMemo, { isPushed: isPushed }, label),
             status && (React__default['default'].createElement(LinkStatus, { color: status.color, fontSize: "14px" }, status.text)),
-            isOpen ? React__default['default'].createElement(Icon$1A, null) : React__default['default'].createElement(Icon$1B, null)),
+            isOpen ? React__default['default'].createElement(Icon$1B, null) : React__default['default'].createElement(Icon$1C, null)),
         React__default['default'].createElement(DropdownContent, { isOpen: isOpen, isPushed: isPushed, maxHeight: React__default['default'].Children.count(children) * MENU_ENTRY_HEIGHT }, children)));
 };
 var templateObject_1$e, templateObject_2$6;
@@ -4061,7 +4067,7 @@ var PanelHeader = function (_a) {
     var homeLink = links.find(function (link) { return link.label === "Home"; });
     return (React__default['default'].createElement(Container$1, { isPushed: false },
         isMobile &&
-            React__default['default'].createElement(IconButton, { className: "cog", variant: "text", onClick: function () { return pushNav(!isPushed); } }, !isPushed ? React__default['default'].createElement(Icon$1h, null) : React__default['default'].createElement(Icon$1j, null)),
+            React__default['default'].createElement(IconButton, { className: "cog", variant: "text", onClick: function () { return pushNav(!isPushed); } }, !isPushed ? React__default['default'].createElement(Icon$1x, null) : React__default['default'].createElement(Icon$1x, null)),
         React__default['default'].createElement(Logo$1, { isPushed: isMobile ? true : false, togglePush: function () { return pushNav(!isPushed); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" })));
 };
 var templateObject_1$9, templateObject_2$3, templateObject_3$1;
@@ -4543,20 +4549,21 @@ var ResetCSS = styled.createGlobalStyle(templateObject_1 || (templateObject_1 = 
 });
 var templateObject_1;
 
-exports.AddIcon = Icon$1E;
+exports.AddIcon = Icon$1F;
 exports.Alert = Alert;
-exports.ArrowBackIcon = Icon$1D;
-exports.ArrowDownIcon = Icon$1C;
-exports.ArrowDropDownIcon = Icon$1B;
-exports.ArrowDropUpIcon = Icon$1A;
-exports.ArrowForwardIcon = Icon$1z;
-exports.ArrowUpIcon = Icon$1y;
-exports.AutoRenewIcon = Icon$1x;
+exports.ArrowBackIcon = Icon$1E;
+exports.ArrowDownIcon = Icon$1D;
+exports.ArrowDropDownIcon = Icon$1C;
+exports.ArrowDropUpIcon = Icon$1B;
+exports.ArrowForwardIcon = Icon$1A;
+exports.ArrowUpIcon = Icon$1z;
+exports.AutoRenewIcon = Icon$1y;
 exports.BackgroundImage = BackgroundImage;
 exports.BalanceInput = BalanceInput;
+exports.BarsIcon = Icon$1x;
 exports.BaseLayout = GridLayout$1;
 exports.BinanceIcon = Icon$1w;
-exports.BlockIcon = Icon$1G;
+exports.BlockIcon = Icon$1H;
 exports.BnbUsdtPairTokenIcon = Icon$1v;
 exports.Box = Box;
 exports.Breadcrumbs = Breadcrumbs;
@@ -4577,7 +4584,7 @@ exports.CardsLayout = GridLayout;
 exports.CatFaceIcon = Icon$1l;
 exports.ChartIcon = Icon$1n;
 exports.Checkbox = Checkbox;
-exports.CheckmarkCircleIcon = Icon$1I;
+exports.CheckmarkCircleIcon = Icon$1J;
 exports.CheckmarkIcon = Icon$1m;
 exports.ChevronDownIcon = Icon$1k;
 exports.ChevronLeftIcon = Icon$1j;
@@ -4590,7 +4597,7 @@ exports.CommunityIcon = Icon$1d;
 exports.CopyIcon = Icon$1c;
 exports.CrownIcon = Icon$1b;
 exports.Dropdown = Dropdown$1;
-exports.ErrorIcon = Icon$1H;
+exports.ErrorIcon = Icon$1I;
 exports.ExpandableButton = ExpandableButton;
 exports.ExpandableLabel = ExpandableLabel;
 exports.FallingBunnies = FallingBunnies;
@@ -4600,7 +4607,7 @@ exports.HelpIcon = Icon$1a;
 exports.HistoryIcon = Icon$19;
 exports.IconButton = IconButton;
 exports.Image = Image;
-exports.InfoIcon = Icon$1F;
+exports.InfoIcon = Icon$1G;
 exports.Input = Input$1;
 exports.KittyIcon = Icon$1i;
 exports.LaurelLeftIcon = Icon$18;

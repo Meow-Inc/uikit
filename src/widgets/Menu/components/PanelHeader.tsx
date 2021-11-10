@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { CogIcon, ChevronLeftIcon, ChevronRightIcon } from "../../../components/Svg";
+import { CogIcon, ChevronLeftIcon, ChevronRightIcon, BarsIcon } from "../../../components/Svg";
 import IconButton from "../../../components/Button/IconButton";
 import { MENU_ENTRY_HEIGHT } from "../config";
 import { PanelProps, PushedProps } from "../types";
@@ -71,7 +71,7 @@ const PanelHeader: React.FC<Props> = ({
     <Container isPushed={false}>
         {isMobile &&
           <IconButton className="cog" variant="text" onClick={() => pushNav(!isPushed)}>
-              {!isPushed ? <ChevronRightIcon/> : <ChevronLeftIcon/> }
+              {!isPushed ? <BarsIcon/> : <BarsIcon/> }
           </IconButton>
         }
 
