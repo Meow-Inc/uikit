@@ -1440,7 +1440,7 @@ var templateObject_1$P, templateObject_2$m;
 
 var getBackgroundColor = function (_a) {
     var theme = _a.theme, variant = _a.variant;
-    return theme.colors[variant === variants$4.SUBTLE ? "input" : "tertiary"];
+    return theme.colors[variant === variants$4.SUBTLE ? "input" : "backgroundDark"];
 };
 var StyledButtonMenu = styled.div(templateObject_1$O || (templateObject_1$O = __makeTemplateObject(["\n  border-radius: 0.5rem;\n  background-color: ", ";\n  border-bottom: 3px solid ", ";\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n\n  ", "\n"], ["\n  border-radius: 0.5rem;\n  background-color: ", ";\n  border-bottom: 3px solid ", ";\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n\n  ", "\n"])), getBackgroundColor, getBackgroundColor, space);
 var ButtonMenu$1 = function (_a) {
@@ -2006,10 +2006,10 @@ var StyledProgress = styled.div(templateObject_2$g || (templateObject_2$g = __ma
     "\n  ",
     "\n  ", "\n"])), function (_a) {
     var theme = _a.theme;
-    return theme.colors.input;
+    return theme.colors.backgroundDark;
 }, function (_a) {
     var theme = _a.theme;
-    return theme.shadows.inset;
+    return theme.colors.backgroundDark;
 }, Bar, function (_a) {
     var variant = _a.variant;
     return (variant === variants$1.FLAT ? "0" : "32px");
@@ -3125,7 +3125,7 @@ var light$3 = {
     handleBackground: lightColors.backgroundAlt,
 };
 var dark$3 = {
-    handleBackground: darkColors.tertiary,
+    handleBackground: darkColors.backgroundDark,
 };
 
 var light$2 = {
