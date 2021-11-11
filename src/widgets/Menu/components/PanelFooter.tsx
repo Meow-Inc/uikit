@@ -20,7 +20,17 @@ const Container = styled.div<{ isDark: boolean, isPushed: boolean}>`
   background-color: ${({ theme, isPushed, isDark }) => isPushed && isDark ? theme.card.background : isPushed && !isDark ? 'rgba(0,0,0,0)' : 'rgba(0,0,0,0)'};
   border-radius: 16px;
   align-items: center;
-  margin-right: 26px;
+  ${({ theme }) => theme.mediaQueries.xs} {
+    margin: 0px 16px;
+  }
+
+  ${({ theme }) => theme.mediaQueries.sm} {
+    margin: 0px 16px;
+  }
+
+  ${({ theme }) => theme.mediaQueries.md} {
+    margin: 0px 20px;
+  }
 `;
 
 const SettingsEntry = styled.div`
@@ -29,7 +39,7 @@ const SettingsEntry = styled.div`
   justify-content: space-between;
   height: ${MENU_ENTRY_HEIGHT}px;
   height: 24px;
-  
+
   button {
     padding: 0px!important;
   }

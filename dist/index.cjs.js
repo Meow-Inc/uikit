@@ -3988,7 +3988,7 @@ var CakePrice = function (_a) {
 var CakePrice$1 = React__default['default'].memo(CakePrice);
 var templateObject_1$c;
 
-var Container$2 = styled__default['default'].div(templateObject_1$b || (templateObject_1$b = __makeTemplateObject(["\n  flex: none;\n  display: flex;\n  flex-direction: row;\n  padding: ", ";;\n  margin: ", ";\n  background-color: ", ";\n  border-radius: 16px;\n  align-items: center;\n  margin-right: 26px;\n"], ["\n  flex: none;\n  display: flex;\n  flex-direction: row;\n  padding: ", ";;\n  margin: ", ";\n  background-color: ", ";\n  border-radius: 16px;\n  align-items: center;\n  margin-right: 26px;\n"])), function (_a) {
+var Container$2 = styled__default['default'].div(templateObject_1$b || (templateObject_1$b = __makeTemplateObject(["\n  flex: none;\n  display: flex;\n  flex-direction: row;\n  padding: ", ";;\n  margin: ", ";\n  background-color: ", ";\n  border-radius: 16px;\n  align-items: center;\n  ", " {\n    margin: 0px 16px;\n  }\n\n  ", " {\n    margin: 0px 16px;\n  }\n\n  ", " {\n    margin: 0px 20px;\n  }\n"], ["\n  flex: none;\n  display: flex;\n  flex-direction: row;\n  padding: ", ";;\n  margin: ", ";\n  background-color: ", ";\n  border-radius: 16px;\n  align-items: center;\n  ", " {\n    margin: 0px 16px;\n  }\n\n  ", " {\n    margin: 0px 16px;\n  }\n\n  ", " {\n    margin: 0px 20px;\n  }\n"])), function (_a) {
     var isPushed = _a.isPushed;
     return isPushed ? '0px' : '4px';
 }, function (_a) {
@@ -3997,8 +3997,26 @@ var Container$2 = styled__default['default'].div(templateObject_1$b || (template
 }, function (_a) {
     var theme = _a.theme, isPushed = _a.isPushed, isDark = _a.isDark;
     return isPushed && isDark ? theme.card.background : isPushed && !isDark ? 'rgba(0,0,0,0)' : 'rgba(0,0,0,0)';
+}, function (_a) {
+    var theme = _a.theme;
+    return theme.mediaQueries.xs;
+}, function (_a) {
+    var theme = _a.theme;
+    return theme.mediaQueries.sm;
+}, function (_a) {
+    var theme = _a.theme;
+    return theme.mediaQueries.md;
 });
-styled__default['default'].div(templateObject_2$5 || (templateObject_2$5 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  height: 24px;\n  margin-left: 24px;\n\n  button {\n    padding: 0px!important;\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  height: 24px;\n  margin-left: 24px;\n\n  button {\n    padding: 0px!important;\n  }\n"])), MENU_ENTRY_HEIGHT);
+styled__default['default'].div(templateObject_2$5 || (templateObject_2$5 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  height: 24px;\n\n  button {\n    padding: 0px!important;\n  }\n\n  ", " {\n    margin: 0px 16px;\n  }\n\n  ", " {\n    margin: 0px 16px;\n  }\n\n  ", " {\n    margin: 0px 20px;\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  height: 24px;\n\n  button {\n    padding: 0px!important;\n  }\n\n  ", " {\n    margin: 0px 16px;\n  }\n\n  ", " {\n    margin: 0px 16px;\n  }\n\n  ", " {\n    margin: 0px 20px;\n  }\n"])), MENU_ENTRY_HEIGHT, function (_a) {
+    var theme = _a.theme;
+    return theme.mediaQueries.xs;
+}, function (_a) {
+    var theme = _a.theme;
+    return theme.mediaQueries.sm;
+}, function (_a) {
+    var theme = _a.theme;
+    return theme.mediaQueries.md;
+});
 var PriceEntry = styled__default['default'].div(templateObject_3$3 || (templateObject_3$3 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: 24px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: 24px;\n"])));
 styled__default['default'].div(templateObject_4$2 || (templateObject_4$2 = __makeTemplateObject(["\n  margin-top: -3px;\n"], ["\n  margin-top: -3px;\n"])));
 var LoginContainer = styled__default['default'].div(templateObject_5$2 || (templateObject_5$2 = __makeTemplateObject(["\n  margin-left: 24px;\n"], ["\n  margin-left: 24px;\n"])));
@@ -4066,12 +4084,21 @@ var Logo = function (_a) {
 var Logo$1 = React__default['default'].memo(Logo, function (prev, next) { return prev.isPushed === next.isPushed && prev.isDark === next.isDark; });
 var templateObject_1$a, templateObject_2$4, templateObject_3$2, templateObject_4$1, templateObject_5$1;
 
-var Container$1 = styled__default['default'].div(templateObject_1$9 || (templateObject_1$9 = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 5px;\n  margin: 0px 20px;\n  // background-color: ", ";\n  display: flex;\n  button {\n    width: ", ";\n    margin-right: 12px;\n\n    > div {\n      display: flex!important;\n    }\n  }\n"], ["\n  flex: none;\n  padding: 8px 5px;\n  margin: 0px 20px;\n  // background-color: ", ";\n  display: flex;\n  button {\n    width: ", ";\n    margin-right: 12px;\n\n    > div {\n      display: flex!important;\n    }\n  }\n"])), function (_a) {
+var Container$1 = styled__default['default'].div(templateObject_1$9 || (templateObject_1$9 = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 5px;\n  margin: 0px 20px;\n  // background-color: ", ";\n  display: flex;\n  button {\n    width: ", ";\n    margin-right: 12px;\n\n    > div {\n      display: flex!important;\n    }\n  }\n\n  ", " {\n    margin: 0px 16px;\n  }\n\n  ", " {\n    margin: 0px 16px;\n  }\n\n  ", " {\n    margin: 0px 20px;\n  }\n"], ["\n  flex: none;\n  padding: 8px 5px;\n  margin: 0px 20px;\n  // background-color: ", ";\n  display: flex;\n  button {\n    width: ", ";\n    margin-right: 12px;\n\n    > div {\n      display: flex!important;\n    }\n  }\n\n  ", " {\n    margin: 0px 16px;\n  }\n\n  ", " {\n    margin: 0px 16px;\n  }\n\n  ", " {\n    margin: 0px 20px;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.nav.background;
 }, function (_a) {
     var isPushed = _a.isPushed;
     return isPushed ? '100%' : 'initial';
+}, function (_a) {
+    var theme = _a.theme;
+    return theme.mediaQueries.xs;
+}, function (_a) {
+    var theme = _a.theme;
+    return theme.mediaQueries.sm;
+}, function (_a) {
+    var theme = _a.theme;
+    return theme.mediaQueries.md;
 });
 styled__default['default'].div(templateObject_2$3 || (templateObject_2$3 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n\n  button {\n    padding: 0px!important;\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n\n  button {\n    padding: 0px!important;\n  }\n"])), MENU_ENTRY_HEIGHT);
 styled__default['default'].div(templateObject_3$1 || (templateObject_3$1 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n\n  button {\n    padding: 0px!important;\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n\n  button {\n    padding: 0px!important;\n  }\n"])), MENU_ENTRY_HEIGHT);
@@ -4453,7 +4480,7 @@ var Menu = function (_a) {
         var handleScroll = function () {
             var currentOffset = window.pageYOffset;
             var isBottomOfPage = window.document.body.clientHeight === currentOffset + window.innerHeight;
-            var isTopOfPage = currentOffset < 20;
+            var isTopOfPage = currentOffset < 0;
             setIsTop(isTopOfPage);
             console.log('isTop', isTop);
             // Always show the menu when user reach the top
