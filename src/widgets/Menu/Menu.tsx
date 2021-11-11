@@ -84,7 +84,7 @@ const Menu: React.FC<NavProps> = ({
     const handleScroll = () => {
       const currentOffset = window.pageYOffset;
       const isBottomOfPage = window.document.body.clientHeight === currentOffset + window.innerHeight;
-      const isTopOfPage = currentOffset < 20;
+      const isTopOfPage = currentOffset < 0;
       setIsTop(isTopOfPage)
       console.log('isTop', isTop)
 

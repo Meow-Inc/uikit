@@ -30,6 +30,18 @@ const Container = styled.div<{ isPushed: boolean }>`
       display: flex!important;
     }
   }
+
+  ${({ theme }) => theme.mediaQueries.xs} {
+    margin: 0px 16px;
+  }
+
+  ${({ theme }) => theme.mediaQueries.sm} {
+    margin: 0px 16px;
+  }
+
+  ${({ theme }) => theme.mediaQueries.md} {
+    margin: 0px 20px;
+  }
 `;
 
 const SettingsEntry = styled.div`
