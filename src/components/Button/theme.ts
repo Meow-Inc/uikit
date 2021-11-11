@@ -38,7 +38,7 @@ export const styleVariants = {
     ":focus": {
       transform: 'translateY(0rem)',
       boxShadow: '0 0rem 0 0 #c13da8',
-    }
+    },
     "> div" : {
       color: "white",
     }
