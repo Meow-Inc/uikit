@@ -31,7 +31,7 @@ export declare const styleVariants: {
             boxShadow: string;
             opacity: string;
         };
-        ":focus": {
+        ":active": {
             transform: string;
             boxShadow: string;
         };
