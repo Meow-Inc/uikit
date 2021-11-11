@@ -25,11 +25,11 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean; isTopOfPa
   top: 0;
   height: 72px;
   width: 100%;
-  transition: padding-top 0.2s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.25s linear;
+  transition: padding-top 0.2s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.1s linear;
   z-index: 11;
   overflow: ${({ isPushed }) => (isPushed ? "initial" : "hidden")};
   transform: translate3d(0, 0, 0);
-  border-radius: 0px 0px 24px 24px;
+  border-radius: 0px;
   ${({ isPushed }) => !isPushed && "white-space: nowrap;"};
 
   ${({ theme }) => theme.mediaQueries.nav} {
