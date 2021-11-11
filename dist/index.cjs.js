@@ -3831,7 +3831,7 @@ var MenuEntry = styled__default['default'].div(templateObject_3$4 || (templateOb
     return theme.colors.textSubtle;
 }, function (_a) {
     var isActive = _a.isActive, theme = _a.theme;
-    return (!isActive ? theme.colors.menuHoverBackground : theme.colors.menuSelectedBackground);
+    return (!isActive ? theme.colors.menuHoverBackground : theme.colors.purpleDark);
 }, function (_a) {
     var isActive = _a.isActive, theme = _a.theme;
     return (!isActive ? theme.colors.contrast : theme.colors.contrast);
@@ -4053,7 +4053,7 @@ var Logo = function (_a) {
     var isAbsoluteUrl = href.startsWith("http");
     var innerLogo = (React__default['default'].createElement(React__default['default'].Fragment, null,
         React__default['default'].createElement(LogoContainer, { isPushed: isPushed },
-            React__default['default'].createElement(Icon, { width: "28px" }),
+            React__default['default'].createElement(Icon, { width: "32px" }),
             React__default['default'].createElement(LogoText, null, "meow"))));
     return (React__default['default'].createElement(Flex, null, isAbsoluteUrl ? (React__default['default'].createElement(LogoWrapper, null,
         innerLogo,

@@ -102,7 +102,7 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
   const innerLogo = (
     <>
       <LogoContainer isPushed={isPushed}>
-        <Icon width="28px" />
+        <Icon width="32px" />
         <LogoText>meow</LogoText>
       </LogoContainer>
     </>

@@ -3817,7 +3817,7 @@ var MenuEntry = styled.div(templateObject_3$4 || (templateObject_3$4 = __makeTem
     return theme.colors.textSubtle;
 }, function (_a) {
     var isActive = _a.isActive, theme = _a.theme;
-    return (!isActive ? theme.colors.menuHoverBackground : theme.colors.menuSelectedBackground);
+    return (!isActive ? theme.colors.menuHoverBackground : theme.colors.purpleDark);
 }, function (_a) {
     var isActive = _a.isActive, theme = _a.theme;
     return (!isActive ? theme.colors.contrast : theme.colors.contrast);
@@ -4039,7 +4039,7 @@ var Logo = function (_a) {
     var isAbsoluteUrl = href.startsWith("http");
     var innerLogo = (React.createElement(React.Fragment, null,
         React.createElement(LogoContainer, { isPushed: isPushed },
-            React.createElement(Icon, { width: "28px" }),
+            React.createElement(Icon, { width: "32px" }),
             React.createElement(LogoText, null, "meow"))));
     return (React.createElement(Flex, null, isAbsoluteUrl ? (React.createElement(LogoWrapper, null,
         innerLogo,

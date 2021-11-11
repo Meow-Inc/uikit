@@ -60,7 +60,7 @@ const MenuEntry = styled.div<Props>`
   }
 
   &:hover {
-    background-color: ${({  isActive, theme }) => (!isActive ? theme.colors.menuHoverBackground : theme.colors.menuSelectedBackground)};
+    background-color: ${({  isActive, theme }) => (!isActive ? theme.colors.menuHoverBackground : theme.colors.purpleDark)};
   }
 
   a > div {
