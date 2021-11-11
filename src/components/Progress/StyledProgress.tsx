@@ -27,8 +27,8 @@ interface StyledProgressProps {
 
 const StyledProgress = styled.div<StyledProgressProps>`
   position: relative;
-  background-color: ${({ theme }) => theme.colors.input};
-  box-shadow: ${({ theme }) => theme.shadows.inset};
+  background-color: ${({ theme }) => theme.colors.backgroundDark};
+  box-shadow: ${({ theme }) => theme.shadows.backgroundDark};
   overflow: hidden;
 
   ${Bar} {
