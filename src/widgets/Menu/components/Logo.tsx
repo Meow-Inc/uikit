@@ -35,7 +35,7 @@ const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
   .mobile-icon {
-    width: 32px;
+    width: 36px;
     ${({ theme }) => theme.mediaQueries.nav} {
       display: none;
     }
@@ -84,6 +84,14 @@ const LogoContainer = styled.div<{ isPushed: boolean }>`
 const LogoImage = styled.img``
 const LogoText = styled.div`
   margin-left: 8px;
+
+  ${({ theme }) => theme.mediaQueries.xs} {
+    display:none;
+  }
+
+  ${({ theme }) => theme.mediaQueries.sm} {
+    display:block;
+  }
 `
 
 

@@ -17,9 +17,8 @@ const UserBlock: React.FC<Props> = ({ account, login, logout }) => {
       {account ? (
         <Button
           hideBorder={true}
-          scale="md"
+          scale="sm"
           fullWidth={true}
-          variant="palePrimary"
           onClick={() => {
             onPresentAccountModal();
           }}

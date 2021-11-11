@@ -4024,7 +4024,7 @@ var templateObject_1$b, templateObject_2$5, templateObject_3$3, templateObject_4
 
 var Icons$1 = IconModule;
 var blink = styled.keyframes(templateObject_1$a || (templateObject_1$a = __makeTemplateObject(["\n  0%,  100% { transform: scaleY(1); }\n  50% { transform:  scaleY(0.1); }\n"], ["\n  0%,  100% { transform: scaleY(1); }\n  50% { transform:  scaleY(0.1); }\n"])));
-var LogoWrapper = styled__default['default'].div(templateObject_2$4 || (templateObject_2$4 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 160px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n  .right-eye {\n    animation-delay: 20ms;\n  }\n  &:hover {\n    .left-eye,\n    .right-eye {\n      transform-origin: center 60%;\n      animation-name: ", ";\n      animation-duration: 350ms;\n      animation-iteration-count: 1;\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 160px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n  .right-eye {\n    animation-delay: 20ms;\n  }\n  &:hover {\n    .left-eye,\n    .right-eye {\n      transform-origin: center 60%;\n      animation-name: ", ";\n      animation-duration: 350ms;\n      animation-iteration-count: 1;\n    }\n  }\n"])), function (_a) {
+var LogoWrapper = styled__default['default'].div(templateObject_2$4 || (templateObject_2$4 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 36px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 160px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n  .right-eye {\n    animation-delay: 20ms;\n  }\n  &:hover {\n    .left-eye,\n    .right-eye {\n      transform-origin: center 60%;\n      animation-name: ", ";\n      animation-duration: 350ms;\n      animation-iteration-count: 1;\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 36px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 160px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n  .right-eye {\n    animation-delay: 20ms;\n  }\n  &:hover {\n    .left-eye,\n    .right-eye {\n      transform-origin: center 60%;\n      animation-name: ", ";\n      animation-duration: 350ms;\n      animation-iteration-count: 1;\n    }\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 }, function (_a) {
@@ -4040,7 +4040,13 @@ var LogoContainer = styled__default['default'].div(templateObject_3$2 || (templa
     return (isPushed ? "\n  //   opacity: 1;\n  // " : "\n  //   opacity: 0!important;\n  // ");
 });
 styled__default['default'].img(templateObject_4$1 || (templateObject_4$1 = __makeTemplateObject([""], [""])));
-var LogoText = styled__default['default'].div(templateObject_5$1 || (templateObject_5$1 = __makeTemplateObject(["\n  margin-left: 8px;\n"], ["\n  margin-left: 8px;\n"])));
+var LogoText = styled__default['default'].div(templateObject_5$1 || (templateObject_5$1 = __makeTemplateObject(["\n  margin-left: 8px;\n\n  ", " {\n    display:none;\n  }\n\n  ", " {\n    display:block;\n  }\n"], ["\n  margin-left: 8px;\n\n  ", " {\n    display:none;\n  }\n\n  ", " {\n    display:block;\n  }\n"])), function (_a) {
+    var theme = _a.theme;
+    return theme.mediaQueries.xs;
+}, function (_a) {
+    var theme = _a.theme;
+    return theme.mediaQueries.sm;
+});
 var Logo = function (_a) {
     var isPushed = _a.isPushed; _a.togglePush; _a.isDark; var href = _a.href;
     var Icon = Icons$1['LogoIcon'];
@@ -4402,7 +4408,7 @@ var UserBlock = function (_a) {
     var account = _a.account, login = _a.login, logout = _a.logout;
     var _b = useWalletModal(login, logout, account), onPresentConnectModal = _b.onPresentConnectModal, onPresentAccountModal = _b.onPresentAccountModal;
     var accountEllipsis = account ? account.substring(0, 4) + "..." + account.substring(account.length - 4) : null;
-    return (React__default['default'].createElement("div", null, account ? (React__default['default'].createElement(Button, { hideBorder: true, scale: "md", fullWidth: true, variant: "palePrimary", onClick: function () {
+    return (React__default['default'].createElement("div", null, account ? (React__default['default'].createElement(Button, { hideBorder: true, scale: "sm", fullWidth: true, onClick: function () {
             onPresentAccountModal();
         } }, accountEllipsis)) : (React__default['default'].createElement(Button, { scale: "md", fullWidth: true, onClick: function () {
             onPresentConnectModal();
