@@ -241,7 +241,7 @@ var lightColors = __assign(__assign(__assign(__assign({}, bannerColorsLight), ba
         violetAlt: "linear-gradient(180deg, #CBD7EF 0%, #9A9FD0 100%)",
         gold: "linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)",
     }, shadows: __assign({}, shadowsLight) });
-var darkColors = __assign(__assign(__assign(__assign({}, bannerColorsDark), baseColors), additionalColors), { menuSelectedBackground: "#ef52d1", menuSelectedColor: "#fff", menuHoverBackground: "#ffffff0d", accordianBackground: '#00000024', secondary: "#9A6AFF", background: "#2d2d32", backgroundDark: "#2a262e", backgroundDisabled: "#3c3742", backgroundAlt: "#3d3842", cardBorder: "#383241", contrast: "#FFFFFF", dropdown: "#1E1D20", dropdownDeep: "#100C18", invertedContrast: "#191326", input: "#372F47", inputSecondary: "#262130", primaryDark: "#0098A1", tertiary: "#353547", text: "#F4EEFF", textDisabled: "#666171", textSubtle: "#B8ADD2", disabled: "#524B63", gradients: {
+var darkColors = __assign(__assign(__assign(__assign({}, bannerColorsDark), baseColors), additionalColors), { menuSelectedBackground: "#ef52d1", menuSelectedColor: "#fff", menuHoverBackground: "#ffffff0d", accordianBackground: '#00000024', secondary: "#9A6AFF", background: "#2d2d32", backgroundDark: "#302c34", backgroundDisabled: "#3c3742", backgroundAlt: "#3d3842", cardBorder: "#383241", contrast: "#FFFFFF", dropdown: "#1E1D20", dropdownDeep: "#100C18", invertedContrast: "#191326", input: "#372F47", inputSecondary: "#262130", primaryDark: "#0098A1", tertiary: "#353547", text: "#F4EEFF", textDisabled: "#666171", textSubtle: "#B8ADD2", disabled: "#524B63", gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
         inverseBubblegum: "linear-gradient(139.73deg, #3D2A54 0%, #313D5C 100%)",
         cardHeader: "linear-gradient(166.77deg, #3B4155 0%, #3A3045 100%)",
@@ -1366,7 +1366,7 @@ var getHeight = function (_a) {
 };
 var Input$1 = styled__default['default'].input(templateObject_1$R || (templateObject_1$R = __makeTemplateObject(["\n  background-color: ", ";\n  border: 0;\n  border-radius: 8px;\n  // box-shadow: ", ";\n  color: ", ";\n  display: block;\n  font-size: 16px;\n  height: ", ";\n  outline: 0;\n  padding: 0 16px;\n  width: 100%;\n\n  &::placeholder {\n    color: ", ";\n  }\n\n  &:disabled {\n    background-color: ", ";\n    box-shadow: none;\n    color: ", ";\n    cursor: not-allowed;\n  }\n\n  &:focus:not(:disabled) {\n    background-color: ", ";\n    box-shadow: ", ";\n  }\n"], ["\n  background-color: ", ";\n  border: 0;\n  border-radius: 8px;\n  // box-shadow: ", ";\n  color: ", ";\n  display: block;\n  font-size: 16px;\n  height: ", ";\n  outline: 0;\n  padding: 0 16px;\n  width: 100%;\n\n  &::placeholder {\n    color: ", ";\n  }\n\n  &:disabled {\n    background-color: ", ";\n    box-shadow: none;\n    color: ", ";\n    cursor: not-allowed;\n  }\n\n  &:focus:not(:disabled) {\n    background-color: ", ";\n    box-shadow: ", ";\n  }\n"])), function (_a) {
     var theme = _a.theme;
-    return theme.colors.input;
+    return theme.colors.backgroundDark;
 }, getBoxShadow$1, function (_a) {
     var theme = _a.theme;
     return theme.colors.text;
@@ -1632,7 +1632,7 @@ var getBottom = function (_a) {
 };
 var DropdownContent$1 = styled__default['default'].div(templateObject_1$G || (templateObject_1$G = __makeTemplateObject(["\n  width: max-content;\n  display: none;\n  flex-direction: column;\n  position: absolute;\n  transform: translate(-50%, 0);\n  left: ", ";\n  bottom: ", ";\n  background-color: ", ";\n  box-shadow: ", ";\n  padding: 16px;\n  max-height: 500px;\n  overflow-y: auto;\n  z-index: ", ";\n  border-radius: ", ";\n"], ["\n  width: max-content;\n  display: none;\n  flex-direction: column;\n  position: absolute;\n  transform: translate(-50%, 0);\n  left: ", ";\n  bottom: ", ";\n  background-color: ", ";\n  box-shadow: ", ";\n  padding: 16px;\n  max-height: 500px;\n  overflow-y: auto;\n  z-index: ", ";\n  border-radius: ", ";\n"])), getLeft, getBottom, function (_a) {
     var theme = _a.theme;
-    return theme.nav.background;
+    return theme.colors.backgroundDark;
 }, function (_a) {
     var theme = _a.theme;
     return theme.shadows.level1;
@@ -2819,7 +2819,7 @@ var Input = styled__default['default'].input(templateObject_2$a || (templateObje
 });
 var StyledToggle = styled__default['default'].div(templateObject_3$6 || (templateObject_3$6 = __makeTemplateObject(["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 24px;\n  // box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: ", ";\n  position: relative;\n  transition: background-color 200ms;\n  width: ", ";\n"], ["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 24px;\n  // box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: ", ";\n  position: relative;\n  transition: background-color 200ms;\n  width: ", ";\n"])), function (_a) {
     var theme = _a.theme, checked = _a.checked;
-    return theme.colors[checked ? "success" : "tertiary"];
+    return checked ? theme.colors["success"] : theme.colors.backgroundDark;
 }, function (_a) {
     var theme = _a.theme;
     return theme.shadows.inset;
