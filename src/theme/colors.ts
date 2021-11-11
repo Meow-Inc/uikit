@@ -90,7 +90,7 @@ export const darkColors: Colors = {
   accordianBackground: '#00000024',
   secondary: "#9A6AFF",
   background: "#2d2d32",
-  backgroundDark: "#2a262e",
+  backgroundDark: "#3d3842",
   backgroundDisabled: "#3c3742",
   backgroundAlt: "#35303a",
   cardBorder: "#383241",
