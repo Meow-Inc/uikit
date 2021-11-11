@@ -428,7 +428,7 @@ var StyledButton = styled__default['default'].button(templateObject_1$W || (temp
     variants: scaleVariants$1,
 }), styledSystem.variant({
     variants: styleVariants$2,
-}), styledSystem.layout, styledSystem.space, function (props) { return props.isButtonMenu && props.isSelected && props.variant === 'primary' && "\n    :hover {\n      transform: none!important;\n      box-shadow: 0 .2rem 0 0 " + baseColors.primaryBorder + "!important;\n    }\n  "; }, function (props) { return props.hideBorder && "\n    border: 0px;\n  "; });
+}), styledSystem.layout, styledSystem.space, function (props) { return props.isButtonMenu && props.isSelected && props.variant === 'primary' && "\n    :hover {\n      transform: none!important;\n      box-shadow: 0 .2rem 0 0 " + baseColors.primaryBorder + "!important;\n    }\n\n    :focus {\n      transform: translateY(0rem);\n      box-shadow: 0 0rem 0 0 #c13da8!important  ;\n    }\n  "; }, function (props) { return props.hideBorder && "\n    border: 0px;\n  "; });
 var templateObject_1$W;
 
 var Button = function (props) {
@@ -4053,7 +4053,7 @@ var Logo = function (_a) {
     var isAbsoluteUrl = href.startsWith("http");
     var innerLogo = (React__default['default'].createElement(React__default['default'].Fragment, null,
         React__default['default'].createElement(LogoContainer, { isPushed: isPushed },
-            React__default['default'].createElement(Icon, { width: "32px" }),
+            React__default['default'].createElement(Icon, { width: "36px" }),
             React__default['default'].createElement(LogoText, null, "meow"))));
     return (React__default['default'].createElement(Flex, null, isAbsoluteUrl ? (React__default['default'].createElement(LogoWrapper, null,
         innerLogo,

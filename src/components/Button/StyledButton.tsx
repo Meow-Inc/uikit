@@ -87,6 +87,11 @@ const StyledButton = styled.button<BaseButtonProps>`
       transform: none!important;
       box-shadow: 0 .2rem 0 0 ${baseColors.primaryBorder}!important;
     }
+
+    :focus {
+      transform: translateY(0rem);
+      box-shadow: 0 0rem 0 0 #c13da8!important  ;
+    }
   `}
   ${(props) => props.hideBorder && `
     border: 0px;

@@ -414,7 +414,7 @@ var StyledButton = styled.button(templateObject_1$W || (templateObject_1$W = __m
     variants: scaleVariants$1,
 }), variant$1({
     variants: styleVariants$2,
-}), layout, space, function (props) { return props.isButtonMenu && props.isSelected && props.variant === 'primary' && "\n    :hover {\n      transform: none!important;\n      box-shadow: 0 .2rem 0 0 " + baseColors.primaryBorder + "!important;\n    }\n  "; }, function (props) { return props.hideBorder && "\n    border: 0px;\n  "; });
+}), layout, space, function (props) { return props.isButtonMenu && props.isSelected && props.variant === 'primary' && "\n    :hover {\n      transform: none!important;\n      box-shadow: 0 .2rem 0 0 " + baseColors.primaryBorder + "!important;\n    }\n\n    :focus {\n      transform: translateY(0rem);\n      box-shadow: 0 0rem 0 0 #c13da8!important  ;\n    }\n  "; }, function (props) { return props.hideBorder && "\n    border: 0px;\n  "; });
 var templateObject_1$W;
 
 var Button = function (props) {
@@ -4039,7 +4039,7 @@ var Logo = function (_a) {
     var isAbsoluteUrl = href.startsWith("http");
     var innerLogo = (React.createElement(React.Fragment, null,
         React.createElement(LogoContainer, { isPushed: isPushed },
-            React.createElement(Icon, { width: "32px" }),
+            React.createElement(Icon, { width: "36px" }),
             React.createElement(LogoText, null, "meow"))));
     return (React.createElement(Flex, null, isAbsoluteUrl ? (React.createElement(LogoWrapper, null,
         innerLogo,
