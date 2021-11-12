@@ -20,9 +20,7 @@ const Container = styled.div<{ isDark: boolean, isPushed: boolean}>`
   background-color: ${({ theme, isPushed, isDark }) => isPushed && isDark ? theme.card.background : isPushed && !isDark ? 'rgba(0,0,0,0)' : 'rgba(0,0,0,0)'};
   border-radius: 16px;
   align-items: center;
-  ${({ theme }) => theme.mediaQueries.xs} {
-    margin: 0px 16px;
-  }
+  margin: 0px 16px;
 
   ${({ theme }) => theme.mediaQueries.sm} {
     margin: 0px 16px;

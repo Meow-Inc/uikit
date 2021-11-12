@@ -84,10 +84,7 @@ const LogoContainer = styled.div<{ isPushed: boolean }>`
 const LogoImage = styled.img``
 const LogoText = styled.div`
   margin-left: 8px;
-
-  ${({ theme }) => theme.mediaQueries.xs} {
-    display:none;
-  }
+  display:none;
 
   ${({ theme }) => theme.mediaQueries.sm} {
     display:block;

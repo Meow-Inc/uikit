@@ -19,9 +19,10 @@ interface Props extends PanelProps, PushedProps {
 const Container = styled.div<{ isPushed: boolean }>`
   flex: none;
   padding: 8px 5px;
-  margin: 0px 20px;
+  margin: 0px 16px;
   // background-color: ${({ theme }) => theme.nav.background};
   display: flex;
+
   button {
     width: ${({isPushed}) => isPushed ? '100%' : 'initial'};
     margin-right: 12px;
@@ -29,10 +30,6 @@ const Container = styled.div<{ isPushed: boolean }>`
     > div {
       display: flex!important;
     }
-  }
-
-  ${({ theme }) => theme.mediaQueries.xs} {
-    margin: 0px 16px;
   }
 
   ${({ theme }) => theme.mediaQueries.sm} {
