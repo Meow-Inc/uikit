@@ -20,6 +20,11 @@ const ModalWrapper = styled.div`
   bottom: 0;
   left: 0;
   z-index: ${({ theme }) => theme.zIndices.modal - 1};
+
+
+  ${({ theme }) => theme.mediaQueries.xs} {
+    justify-content: flex-end;
+  }
 `;
 
 export const Context = createContext<ModalsContext>({

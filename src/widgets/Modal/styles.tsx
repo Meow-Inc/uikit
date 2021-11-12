@@ -52,5 +52,7 @@ export const ModalContainer = styled(Box)<{ minWidth: string }>`
     width: auto;
     min-width: ${({ minWidth }) => minWidth};
     max-width: 100%;
+    border-radius: 32px 32px 0px 0px;
+
   }
 `;
