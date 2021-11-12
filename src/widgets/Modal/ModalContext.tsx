@@ -12,7 +12,6 @@ interface ModalsContext {
 const ModalWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   position: fixed;
   top: 0;
@@ -21,9 +20,10 @@ const ModalWrapper = styled.div`
   left: 0;
   z-index: ${({ theme }) => theme.zIndices.modal - 1};
 
+  justify-content: flex-end;
 
   ${({ theme }) => theme.mediaQueries.xs} {
-    justify-content: flex-end;
+    justify-content: center;
   }
 `;
 
