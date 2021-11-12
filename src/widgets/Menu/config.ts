@@ -47,7 +47,7 @@ export const links = [
     href: "/syrup",
   },
   {
-    label: "Kittens",
+    label: "NFTs",
     icon: "TeamBattleIcon",
     href: "/kittens",
   },
