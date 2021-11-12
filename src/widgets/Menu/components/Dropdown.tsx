@@ -42,6 +42,10 @@ const DropdownContent = styled.div<{ isOpen: boolean; isPushed: boolean; maxHeig
   top: 60px;
   position: absolute;
   width: 100%;
+
+  background-color: rgb(154 107 255);
+  padding: 0px;
+  box-shadow: rgb(0 0 0 / 30%) 0px 32px 35px -15px;
 `;
 
 const Dropdown: React.FC<Props> = ({
