@@ -2848,7 +2848,7 @@ Toggle.defaultProps = {
 };
 
 var breakpointMap = {
-    xs: 420,
+    xs: 520,
     sm: 576,
     md: 852,
     lg: 968,
