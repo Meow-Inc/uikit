@@ -2834,7 +2834,7 @@ Toggle.defaultProps = {
 };
 
 var breakpointMap = {
-    xs: 370,
+    xs: 420,
     sm: 576,
     md: 852,
     lg: 968,
@@ -3879,7 +3879,7 @@ var Container$4 = styled.div(templateObject_1$e || (templateObject_1$e = __makeT
     var theme = _a.theme;
     return theme.colors.contrast;
 });
-var DropdownContent = styled.div(templateObject_2$6 || (templateObject_2$6 = __makeTemplateObject(["\n  max-height: ", ";\n  transition: max-height 0.3s ease-out;\n  overflow: hidden;\n  border-color: ", ";\n  padding: ", ";\n  background-color: ", ";\n  box-shadow: ", ";\n  border-radius: 0px 0px 12px 12px;\n  top: 60px;\n  position: absolute;\n  width: 100%;\n"], ["\n  max-height: ", ";\n  transition: max-height 0.3s ease-out;\n  overflow: hidden;\n  border-color: ", ";\n  padding: ", ";\n  background-color: ", ";\n  box-shadow: ", ";\n  border-radius: 0px 0px 12px 12px;\n  top: 60px;\n  position: absolute;\n  width: 100%;\n"])), function (_a) {
+var DropdownContent = styled.div(templateObject_2$6 || (templateObject_2$6 = __makeTemplateObject(["\n  max-height: ", ";\n  transition: max-height 0.3s ease-out;\n  overflow: hidden;\n  border-color: ", ";\n  padding: ", ";\n  background-color: ", ";\n  box-shadow: ", ";\n  border-radius: 0px 0px 12px 12px;\n  top: 60px;\n  position: absolute;\n  width: 100%;\n\n  background-color: rgb(154 107 255);\n  padding: 0px;\n  box-shadow: rgb(0 0 0 / 30%) 0px 32px 35px -15px;\n"], ["\n  max-height: ", ";\n  transition: max-height 0.3s ease-out;\n  overflow: hidden;\n  border-color: ", ";\n  padding: ", ";\n  background-color: ", ";\n  box-shadow: ", ";\n  border-radius: 0px 0px 12px 12px;\n  top: 60px;\n  position: absolute;\n  width: 100%;\n\n  background-color: rgb(154 107 255);\n  padding: 0px;\n  box-shadow: rgb(0 0 0 / 30%) 0px 32px 35px -15px;\n"])), function (_a) {
     var isOpen = _a.isOpen, maxHeight = _a.maxHeight;
     return (isOpen ? maxHeight + 16 + "px" : 0);
 }, function (_a) {
