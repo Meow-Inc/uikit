@@ -80,7 +80,6 @@ const PanelFooter: React.FC<Props> = ({
   setLang,
   userBlock
 }) => {
-  console.log('Is Dark', isDark)
   // if (!isPushed) {
   //   return (
   //     <Container isDark={isDark} isPushed={false}>

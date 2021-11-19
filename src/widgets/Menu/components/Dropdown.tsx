@@ -69,7 +69,6 @@ const Dropdown: React.FC<Props> = ({
       setIsOpen(true);
     }
   };
-  console.log('IsMobile', isMobile)
   // Handle close if click outside
   const ref = useRef(null)
   useOnClickOutside(ref,() => setIsOpen(false))

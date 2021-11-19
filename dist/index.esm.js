@@ -3910,7 +3910,6 @@ var Dropdown = function (_a) {
             setIsOpen(true);
         }
     };
-    console.log('IsMobile', isMobile);
     // Handle close if click outside
     var ref = useRef(null);
     useOnClickOutside(ref, function () { return setIsOpen(false); });
@@ -3927,7 +3926,6 @@ var templateObject_1$e, templateObject_2$6;
 var MenuLink = function (_a) {
     var href = _a.href, otherProps = __rest(_a, ["href"]);
     var isHttpLink = href === null || href === void 0 ? void 0 : href.startsWith("http");
-    console.log('otherProps', otherProps);
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     var Tag = isHttpLink ? "a" : NavLink;
     var props = isHttpLink ? { href: href } : { to: href };
@@ -4008,7 +4006,6 @@ styled.div(templateObject_4$2 || (templateObject_4$2 = __makeTemplateObject(["\n
 var LoginContainer = styled.div(templateObject_5$2 || (templateObject_5$2 = __makeTemplateObject(["\n  margin-left: 24px;\n"], ["\n  margin-left: 24px;\n"])));
 var PanelFooter = function (_a) {
     _a.isPushed; _a.pushNav; _a.toggleTheme; var isDark = _a.isDark, cakePriceUsd = _a.cakePriceUsd; _a.currentLang; _a.langs; _a.setLang; var userBlock = _a.userBlock;
-    console.log('Is Dark', isDark);
     // if (!isPushed) {
     //   return (
     //     <Container isDark={isDark} isPushed={false}>
