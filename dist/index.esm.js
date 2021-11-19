@@ -4456,8 +4456,12 @@ var Menu = function (_a) {
             var currentOffset = window.pageYOffset;
             var isBottomOfPage = window.document.body.clientHeight === currentOffset + window.innerHeight;
             var isTopOfPage = currentOffset < 0;
-            setIsTop(isTopOfPage);
-            console.log('isTop', isTop);
+            if (!isTopOfPage && isTop) {
+                setIsTop(isTopOfPage);
+            }
+            if (isTopOfPage && !isTop) {
+                setIsTop(isTopOfPage);
+            }
             // Always show the menu when user reach the top
             if (isTopOfPage) {
                 setShowMenu(true);
