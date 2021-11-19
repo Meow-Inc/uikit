@@ -10,7 +10,6 @@ const Button = <E extends ElementType = "button">(props: ButtonProps<E>): JSX.El
   const internalProps = external ? getExternalLinkProps() : {};
   const isDisabled = isLoading || disabled;
   const classNames = className ? [className] : [];
-  console.log('Font size', fontSize)
   if (isLoading) {
     classNames.push("pancake-button--loading");
   }

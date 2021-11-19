@@ -426,7 +426,6 @@ var Button = function (props) {
     var internalProps = external ? getExternalLinkProps() : {};
     var isDisabled = isLoading || disabled;
     var classNames = className ? [className] : [];
-    console.log('Font size', fontSize);
     if (isLoading) {
         classNames.push("pancake-button--loading");
     }
@@ -4111,7 +4110,6 @@ var StyledPanel$1 = styled.div(templateObject_1$8 || (templateObject_1$8 = __mak
 });
 var Panel = function (props) {
     var isPushed = props.isPushed, showMenu = props.showMenu; props.userBlock; var isMobile = props.isMobile, isTopOfPage = props.isTopOfPage;
-    console.log('isTopOfPage', isTopOfPage);
     return (React.createElement(StyledPanel$1, { isPushed: isPushed, showMenu: showMenu, isTopOfPage: isTopOfPage ? true : false },
         React.createElement(PanelHeader, __assign({}, props, { isMobile: isMobile ? true : false })),
         React.createElement(PanelBody$1, __assign({}, props)),

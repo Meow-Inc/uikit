@@ -42,7 +42,6 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean; isTopOfPa
 
 const Panel: React.FC<Props> = (props) => {
   const { isPushed, showMenu, userBlock, isMobile, isTopOfPage } = props;
-  console.log('isTopOfPage', isTopOfPage)
   return (
     <StyledPanel isPushed={isPushed} showMenu={showMenu} isTopOfPage={isTopOfPage ? true : false}>
       <PanelHeader {...props} isMobile={isMobile ? true : false}/>
